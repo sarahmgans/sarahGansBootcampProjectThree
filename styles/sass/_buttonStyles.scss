@@ -1,0 +1,42 @@
+.buttons {
+    margin-top: 40px;
+}
+
+.cuteButton input[type="radio"]:checked+label {
+    color:red;
+}
+
+.cuteButton {
+    margin: 20px 0 0 0;
+    padding: 0;
+}
+
+input[type="radio"] {
+    opacity: 0.01;
+    position: absolute;
+    left: -1000px;
+    display: none;
+}
+
+.cuteButton label {
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+    transition: 0.3s;
+}
+
+.cuteButton label:hover {
+    background: green;
+}
+
+.submit,
+.reset {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 10px;
+    border-radius: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+}   

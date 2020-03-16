@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Perfect Apple for You</title>
+    <link rel="stylesheet" href="./styles/styles.css">
+</head>
+<body>
+    <header>
+        <h1>The Perfect Apple for Y🍎U</h1>
+    </header>
+    <main>
+        <section class="quiz">
+            <div class="appleQuiz" id="quizPomme">
+                <form action="#" method="#" class="myForm" name="myForm">
+                    <fieldset>
+                        <h2>How will you be using your apple?</h2>
+                        <div class="cuteButton">
+                            
+                            <input type="radio" name="use" value="cooking" id="cooking" required>
+                            <label for="cooking">Cooking</label>
+                            
+                            <input type="radio" name="use" value="snack" id="snack">
+                            <label for="snack">Snacking</label>
+                        </div>
+                    </fieldset>
+                    <fieldset>
+                        <h2>What is your apple-texture of choice?</h2>
+                        <div class="cuteButton">
+                            <input type="radio" name="texture" value="crisp" id="crisp" required>
+                            <label for="crisp">Crisp</label>
+                            
+                            <input type="radio" name="texture" value="soft" id="soft">
+                            <label for="soft">Soft</label>
+                        </div>
+                    </fieldset>
+                    <fieldset>
+                        <h2>What flavour profile would you love your apple to have?</h2>
+                        <div class="cuteButton">
+                            <input type="radio" name="flavour" value="sweet" id="sweet" required>
+                            <label for="sweet">Sweet</label>
+                        
+                            <input type="radio" name="flavour" value="tart" id="tart">
+                            <label for="tart">Tart</label>
+                        </div>
+                    </fieldset>
+                    <fieldset>
+                        <h2>What size would you like your apple to be?</h2>
+                        <div class="cuteButton">
+                            <input type="radio" name="size" value="big" id="big" required>
+                            <label for="big">Big</label>
+                    
+                            <input type="radio" name="size" value="little" id="little">
+                            <label for="little">Little</label>
+                        </div>
+                        </fieldset>
+                    <div class="buttons">
+                    <input class="submit" id="submitButton" type="submit" value="Submit Quiz" />
+                    <input class="reset" id="resetButton" type="reset" value="Reset Quiz">
+                    </div>
+                </form>
+            </div>
+            <section class="results"></section>
+        </section>
+    </main>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
