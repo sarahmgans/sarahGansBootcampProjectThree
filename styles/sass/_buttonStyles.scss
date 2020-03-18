@@ -21,24 +21,27 @@ input[type="radio"] {
 .cuteButton label,
 .submit,
 .reset {
+    font-family: 'Raleway', sans-serif;
+    font-weight: regular;
+    font-weight: 300;
     padding: 10px 20px 10px 20px;
-    border: 2px solid green;
+    border: 3px solid transparent;
     border-radius: 20px;
     margin: 20px 30px 20px 30px;
     transition: 0.3s;
-    font-family: 'Cardo', serif;
-    background-color: white;
+    background-color: black;
     line-height: 1.15;
     font-size: 20px;
+    color: white;
 }
 
 .cuteButton label:hover,
 .submit:hover,
 .reset:hover {
-    border: 2px solid #000e8e;
+    border: 3px solid red;
 }
 
 .submit,
 .reset {
-   border: 2px solid red;
+   border: 3px solid red;
 }   

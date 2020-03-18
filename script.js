@@ -113,45 +113,37 @@ $('form').on('submit', function(e){
     const flavour = $('input[name="flavour"]:checked').val();
     const size = $('input[name="size"]:checked').val();
 
-    // 4) Declare a variable to be an empty array to be filled with eight objects, all eight of which will have the same use.
+    // 4) Declare a variable to be an empty that will be filled with eight objects, all eight of which will have the same use.
     const appleChoices = appleProperties[use];
 
-    // 5) Declare a variable to be an empty array to be filled with four objects, all of which will have the same texture and use.
-    const textureChoices = [];
-    for(let i = 0; i < appleChoices.length; i++){
-
-        const store = appleChoices[i]
-        if(store.texture === texture) {
-            textureChoices.push(store); 
-        }    
-    }   
-
-    // 6) Declare another variable to be an empty array to be filled with two objects, both with the same use, flavour and texture. 
-    const flavourChoices = [];
-    for(let i = 0; i < textureChoices.length; i++){
-
-        const secondStore = textureChoices[i]
-        if(secondStore.flavour === flavour) {
-            flavourChoices.push(secondStore); 
-        }
-    }
-
-    // 8) Declare a last variable to be an empty array to be filled with the final apple object. 
+    // 5) Declare a variable to be an array that will be filled with the final objects.
     const finalChoice = [];
-    for(let i = 0; i < flavourChoices.length; i++){
-        
-        const thirdStore = flavourChoices[i]
-        if(thirdStore.size === size){
-            finalChoice.push(thirdStore);
+    
+
+    // 6) Create a for loop that loops through the different arrays matching the property/value pairs with the checked result stored in the variable. 
+    for (let i = 0; i < appleChoices.length; i++) {
+        const store = appleChoices[i]
+        if (store.texture === texture && store.flavour === flavour && store.size === size) {
+            finalChoice.push(store);
         }
     }
 
-    // 7) Display the html to a single location on the page.
-    $('.results').html(`<h2>You should try the ${finalChoice[0].name} apple!</h2>`);
+    // 6) Display the html to a single location on the page.
+    $('.result').html(`<h3>You should try the ${finalChoice[0].name} apple!</h3>`);
 
-    // 8) On reset, clear the html that was posted to the .results section of the page. 
+    // 7) On reset, clear the html that was posted to the .results section of the page. 
     $('.reset').click(function() {
-    $('.results').empty();
+    $('.result').empty();
+
+        $("a[href^='#']").click(function (e) {
+            e.preventDefault();
+
+            var position = $($(this).attr("href")).offset().top;
+
+            $("body, html").animate({
+                scrollTop: position
+            }, 2000);
+        });
 });
 
 })
