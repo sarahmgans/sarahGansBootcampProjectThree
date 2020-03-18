@@ -43,5 +43,11 @@ input[type="radio"] {
 
 .submit,
 .reset {
-   border: 3px solid red;
+   border: 3px solid transparent;
 }   
+
+.submit:hover,
+.reset:hover {
+    color: red;
+    border: 3px solid red;
+}
