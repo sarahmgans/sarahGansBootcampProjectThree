@@ -269,21 +269,20 @@ section {
 
 h1 {
   font-family: 'Oswald', sans-serif;
-  font-size: 40px;
+  font-size: 50px;
   text-transform: uppercase;
   letter-spacing: 3px;
-  background: rgba(255, 204, 204, 0.8);
   padding: 10px;
   border-radius: 20px;
   color: red;
+  margin-bottom: 0px;
 }
 
 h2 {
   font-family: 'Cardo', serif;
   font-size: 25px;
   margin: 30px 0px 30px 0px;
-  color: blue;
-  background: rgba(255, 204, 204, 0.7);
+  color: black;
   text-align: center;
   width: 80%;
   line-height: 1.15;
@@ -294,6 +293,11 @@ h2 {
 body {
   background-image: url(../assets/michael-weidner-tiPQCmdALWs-unsplash.jpg);
   background-size: cover;
+}
+
+.textBackground {
+  background-color: rgba(255, 255, 255, 0.6);
+  margin: 0 auto;
 }
 
 .buttons {
