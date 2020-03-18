@@ -107,6 +107,7 @@ $('form').on('submit', function(e){
 
     // 2) prevent default behaviour
     e.preventDefault();
+
     // 3) save the values from the inputs into variables
     const use = $('input[name="use"]:checked').val();
     const texture = $('input[name="texture"]:checked').val();
@@ -144,24 +145,25 @@ $('form').on('submit', function(e){
         apple!</h3>`);
     }
 
+    // 7) scroll from the submit button to the result
+    $('html, body').animate({
+        scrollTop: $('.result').offset().top
+    }, 800);
+
+    // $('form').on('.reset', function (e) {
+    // e.preventDefault();
+    //  $('html, body').animate({
+    //     scrollTop: $('.textBackground').offset().top
+    // }, 800);
+    // }
+
+
+
+
     // 7) On reset, clear the html that was posted to the .results section of the page. 
     $('.reset').click(function() {
     $('.result').empty();
-
-        $(document).ready(function () {
-            // Add smooth scrolling to all links
-            $('a').on('click', function (event) {
-                if (this.hash !== "") {
-                    event.preventDefault();
-                    let hash = this.hash;
-                    $('html, body').animate({
-                        scrollTop: $(hash).offset().top
-                    }, 800, function () {
-                        window.location.hash = hash;
-                    });
-                }
-            });
-        });
+ 
 });
 
 })

@@ -318,13 +318,8 @@ h3 span {
   padding-bottom: 20px;
 }
 
-.section {
-  min-height: 100%;
-}
-
 .buttons {
   margin-top: 40px;
-  border-top: 1px solid black;
   width: 100vw;
   padding-top: 30px;
   padding-bottom: 10px;
@@ -332,6 +327,7 @@ h3 span {
 
 .cuteButton input[type="radio"]:checked + label {
   color: #ff0000;
+  border: 3px solid #ff0000;
 }
 
 .cuteButton {
@@ -372,11 +368,14 @@ input[type="radio"] {
 
 .submit,
 .reset {
-  border: 3px solid transparent;
+  border: 3px solid #000e8e;
+  padding: 20px 30px 20px 30px;
+  color: white;
+  background-color: #ff0000;
 }
 
 .submit:hover,
 .reset:hover {
-  color: #ff0000;
-  border: 3px solid #ff0000;
+  color: #000e8e;
+  border: 3px solid #000e8e;
 }
