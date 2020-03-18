@@ -116,11 +116,10 @@ $('form').on('submit', function(e){
     // 4) Declare a variable to be an empty that will be filled with eight objects, all eight of which will have the same use.
     const appleChoices = appleProperties[use];
 
-    // 5) Declare a variable to be an array that will be filled with the final objects.
+    // 5) Declare a variable to be an array that will be filled with the final object.
     const finalChoice = [];
     
-
-    // 6) Create a for loop that loops through the different arrays matching the property/value pairs with the checked result stored in the variable. 
+    // 6) Create a for loop that loops through and matches the property/value pairs with the saved values from the checked texture, flavour and size inputs. This will result in one array named the finalChoice array. 
     for (let i = 0; i < appleChoices.length; i++) {
         const store = appleChoices[i]
         if (store.texture === texture && store.flavour === flavour && store.size === size) {
@@ -128,21 +127,40 @@ $('form').on('submit', function(e){
         }
     }
 
-    // 6) Display the html to a single location on the page.
-    $('.result').html(`<h3>You should try the ${finalChoice[0].name} apple!</h3>`);
+    // 7) Store the name of the object left in the finalChoice array in a variable called finalApple.
+    const finalApple = finalChoice[0].name
+
+    // 6) Display the html to a single location on the page. Modify one of the html's so that if the name of the apple is crab apple, remove the word apple at the end of the sentence so that the word apple is not repeated. 
+    if (finalApple === 'Crab Apple') {
+        $('.result').html(`
+        <h3>You should try a 
+        <span>${finalApple}</span>!
+        </h3>`);
+    }
+    else {
+        $('.result').html(`
+        <h3>You should try a 
+        <span>${finalApple}</span> 
+        apple!</h3>`);
+    }
 
     // 7) On reset, clear the html that was posted to the .results section of the page. 
     $('.reset').click(function() {
     $('.result').empty();
 
-        $("a[href^='#']").click(function (e) {
-            e.preventDefault();
-
-            var position = $($(this).attr("href")).offset().top;
-
-            $("body, html").animate({
-                scrollTop: position
-            }, 2000);
+        $(document).ready(function () {
+            // Add smooth scrolling to all links
+            $('a').on('click', function (event) {
+                if (this.hash !== "") {
+                    event.preventDefault();
+                    let hash = this.hash;
+                    $('html, body').animate({
+                        scrollTop: $(hash).offset().top
+                    }, 800, function () {
+                        window.location.hash = hash;
+                    });
+                }
+            });
         });
 });
 

@@ -21,7 +21,7 @@ h1 {
     letter-spacing: 3px;
     padding: 10px;
     border-radius: 20px;
-    color: red;
+    color: #ff0000;
     margin-bottom: 0px;
 }
 
@@ -48,12 +48,28 @@ body {
 .textBackground {
     background-color: rgba(255, 255, 255, 0.6);
     margin: 0 auto;
+    // width: 100vw;
 }
 
 h3 {
-    color: red;
+    color: black;
     font-size: 30px;
+    line-height: 45px;
 }
+
+h3 span {
+    color: #ff0000;
+    font-size: 35px;
+}
+
+.result {
+    padding-bottom: 20px;
+}
+
+.section {
+    min-height: 100%;
+}
+
 
 
 

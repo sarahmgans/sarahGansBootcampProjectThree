@@ -1,14 +1,19 @@
 .buttons {
     margin-top: 40px;
+    border-top: 1px solid black;
+    width: 100vw;
+    padding-top: 30px;
+    padding-bottom: 10px;
 }
 
 .cuteButton input[type="radio"]:checked+label {
-    color:red;
+    color: #ff0000;
 }
 
 .cuteButton {
-    margin: 20px 0 0 0;
+    margin: 20px 0 20px 0;
     padding: 0;
+    // display: flex;
 }
 
 input[type="radio"] {
@@ -29,7 +34,7 @@ input[type="radio"] {
     border-radius: 20px;
     margin: 20px 30px 20px 30px;
     transition: 0.3s;
-    background-color: black;
+    background-color: #000e8e;
     line-height: 1.15;
     font-size: 20px;
     color: white;
@@ -38,7 +43,7 @@ input[type="radio"] {
 .cuteButton label:hover,
 .submit:hover,
 .reset:hover {
-    border: 3px solid red;
+    border: 3px solid #ff0000;
 }
 
 .submit,
@@ -48,6 +53,6 @@ input[type="radio"] {
 
 .submit:hover,
 .reset:hover {
-    color: red;
-    border: 3px solid red;
+    color: #ff0000;
+    border: 3px solid #ff0000;
 }
