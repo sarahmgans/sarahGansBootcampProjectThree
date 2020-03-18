@@ -2,4 +2,10 @@
     .myForm > fieldset:nth-child(1) > div:nth-child(2){
         display: flex;
     }
+
+    .myForm > fieldset:nth-child(1) > div:nth-child(2) > label:nth-child(2),
+    .myForm > fieldset:nth-child(1) > div:nth-child(2) > label:nth-child(4) {
+        margin-right: 5px;
+        margin-left: 5px;
+    }
 }
