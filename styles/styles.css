@@ -379,3 +379,11 @@ input[type="radio"] {
   color: #000e8e;
   border: 3px solid #000e8e;
 }
+
+@media (max-width: 754px) {
+  .myForm > fieldset:nth-child(1) > div:nth-child(2) {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
