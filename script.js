@@ -155,13 +155,15 @@ $('form').on('submit', function(e){
     $('html, body').animate({
         scrollTop: $('.result').offset().top
     }, 800);
-
-    // 8) On reset, clear the html that was posted to the .results section of the page. 
-    $('.reset').click(function() {
-    $('.result').empty();
- 
 });
 
-})
+// 8) On reset, clear the html that was posted to the .results section of the page. 
+$('.reset').click(function () {
+    $('.result').empty();
+    $('html, body').animate({
+        scrollTop: $('.textBackground').offset().top
+    }, 800);
+
+});
 
 
