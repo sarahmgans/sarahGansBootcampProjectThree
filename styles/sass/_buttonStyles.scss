@@ -59,3 +59,15 @@ input[type="radio"] {
     color: #000e8e;
     border: 3px solid #000e8e;
 }
+
+.top {
+    position: relative;
+}
+
+.top > a:nth-child(1) {
+    position: absolute;
+    bottom: 25px;
+    right: 545px;
+    font-size: 51px;
+    color: transparent;
+}

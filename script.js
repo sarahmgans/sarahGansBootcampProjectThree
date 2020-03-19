@@ -102,6 +102,8 @@ const appleProperties = {
 ]
 }
 
+
+
 // 1) attach event listener onto submit on form
 $('form').on('submit', function(e){
 
@@ -137,33 +139,29 @@ $('form').on('submit', function(e){
         <h3>You should try a 
         <span>${finalApple}</span>!
         </h3>`);
-    }
-    else {
+    } else if (finalApple === 'Empire') {
+        $('.result').html(`
+        <h3>You should try an 
+        <span>${finalApple}</span> 
+        apple!</h3>`);
+    } else {
         $('.result').html(`
         <h3>You should try a 
         <span>${finalApple}</span> 
         apple!</h3>`);
     }
 
-    // 7) scroll from the submit button to the result
+    // 7) on submit button scroll to the result
     $('html, body').animate({
         scrollTop: $('.result').offset().top
     }, 800);
 
-    // $('form').on('.reset', function (e) {
-    // e.preventDefault();
-    //  $('html, body').animate({
-    //     scrollTop: $('.textBackground').offset().top
-    // }, 800);
-    // }
-
-
-
-
-    // 7) On reset, clear the html that was posted to the .results section of the page. 
+    // 8) On reset, clear the html that was posted to the .results section of the page. 
     $('.reset').click(function() {
     $('.result').empty();
  
 });
 
 })
+
+
