@@ -402,10 +402,7 @@ input[type="radio"] {
     display: -ms-flexbox;
     display: flex;
   }
-  .myForm > fieldset:nth-child(1) > div:nth-child(2) > label:nth-child(2),
-  .myForm > fieldset:nth-child(1) > div:nth-child(2) > label:nth-child(4),
-  .myForm > fieldset:nth-child(3) > div:nth-child(2) > label:nth-child(2),
-  .myForm > fieldset:nth-child(3) > div:nth-child(2) > label:nth-child(4) {
+  .cuteButton label, .submit, .reset {
     margin-right: 5px;
     margin-left: 5px;
   }

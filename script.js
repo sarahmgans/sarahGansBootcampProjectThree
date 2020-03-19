@@ -102,8 +102,6 @@ const appleProperties = {
 ]
 }
 
-
-
 // 1) attach event listener onto submit on form
 $('form').on('submit', function(e){
 
