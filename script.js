@@ -134,37 +134,35 @@ $('form').on('submit', function(e){
     const finalApple = finalChoice[0].name
 
     // 6) Display the html to a single location on the page. Modify one of the html's so that if the name of the apple is crab apple, remove the word apple at the end of the sentence so that the word apple is not repeated. 
-    if (finalApple === 'Crab Apple') {
-        $('.result').html(`
-        <h3>You should try a 
-        <span>${finalApple}</span>!
-        </h3>`);
-    } else if (finalApple === 'Empire') {
-        $('.result').html(`
-        <h3>You should try an 
-        <span>${finalApple}</span> 
-        apple!</h3>`);
-    } else {
-        $('.result').html(`
-        <h3>You should try a 
-        <span>${finalApple}</span> 
-        apple!</h3>`);
+    let identifier = 'a';
+    let apple = ' apple'
+
+    if (finalApple === 'Empire') { 
+        identifier = 'an';
+    } 
+
+    if (finalApple === "Crab Apple") {
+        apple ='';
     }
+
+    $('.result').html(`
+        <h3>You should try ${identifier}
+        <span class='final'>${finalApple}</span>${apple}!
+        </h3>`);
 
     // 7) on submit button scroll to the result
     $('html, body').animate({
         scrollTop: $('.result').offset().top
     }, 800);
-
-    // 8) On reset, clear the html that was posted to the .results section of the page. 
-    $('.reset').click(function () {
-        $('.result').empty();
-        $('html, body').animate({
-            scrollTop: $('.textBackground').offset().top
-        }, 800);
-});
 });
 
+// 8) On reset, clear the html that was posted to the .results section of the page. 
+$('.reset').click(function () {
+    $('.result').empty();
+    $('html, body').animate({
+        scrollTop: $('.textBackground').offset().top
+    }, 800);
+});
 
 
 

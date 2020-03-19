@@ -272,7 +272,7 @@ h1 {
   font-weight: bold;
   text-transform: uppercase;
   font-size: 50px;
-  letter-spacing: 3px;
+  letter-spacing: 1px;
   padding: 10px;
   border-radius: 20px;
   color: #ff0000;
@@ -307,9 +307,10 @@ h3 {
   color: black;
   font-size: 30px;
   line-height: 45px;
+  text-transform: none;
 }
 
-h3 span {
+h3 span.final {
   color: #ff0000;
   font-size: 35px;
 }
@@ -358,6 +359,7 @@ input[type="radio"] {
   line-height: 1.15;
   font-size: 20px;
   color: white;
+  text-transform: lowercase;
 }
 
 .cuteButton label:hover,
@@ -372,6 +374,7 @@ input[type="radio"] {
   padding: 20px 30px 20px 30px;
   color: white;
   background-color: #ff0000;
+  text-transform: none;
 }
 
 .submit:hover,

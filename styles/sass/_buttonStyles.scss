@@ -38,6 +38,7 @@ input[type="radio"] {
     line-height: 1.15;
     font-size: 20px;
     color: white;
+    text-transform: lowercase;
 }
 
 .cuteButton label:hover,
@@ -52,6 +53,7 @@ input[type="radio"] {
    padding: 20px 30px 20px 30px;
    color: white;
    background-color: #ff0000;
+   text-transform: none;
 }   
 
 .submit:hover,
