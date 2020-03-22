@@ -245,7 +245,6 @@ img {
   line-height: 0;
 }
 
-h1,
 fieldset,
 article,
 aside,
@@ -273,10 +272,14 @@ h1 {
   text-transform: uppercase;
   font-size: 50px;
   letter-spacing: 1px;
-  padding: 10px;
-  border-radius: 20px;
   color: #ff0000;
   margin-bottom: 0px;
+  text-align: center;
+}
+
+h1 span {
+  display: inline-block;
+  margin: 0;
 }
 
 h2,
@@ -284,13 +287,28 @@ h3 {
   font-family: 'Raleway', sans-serif;
   font-weight: regular;
   font-size: 25px;
-  margin: 30px 0px 30px 0px;
+  margin: 30px 0px;
   color: black;
   text-align: center;
   width: 80%;
   line-height: 1.15;
   padding: 10px;
   border-radius: 20px;
+}
+
+.result a {
+  font-family: 'Raleway', sans-serif;
+  font-weight: regular;
+  font-size: 24px;
+  text-decoration: none;
+  color: black;
+  background-color: white;
+  padding: 15px;
+  border-radius: 20px;
+  margin-bottom: 20px;
+  border: 3px dotted red;
+  margin-right: 10px;
+  margin-left: 10px;
 }
 
 body {
@@ -313,10 +331,7 @@ h3 {
 h3 span.final {
   color: #ff0000;
   font-size: 35px;
-}
-
-.result {
-  padding-bottom: 20px;
+  display: block;
 }
 
 .buttons {

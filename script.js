@@ -4,49 +4,57 @@ const appleProperties = {
         name: 'Empire',
         texture: 'soft',
         flavour: 'tart',
-        size: 'little'
+        size: 'little',
+        url: 'https://en.wikipedia.org/wiki/Empire_(apple)'
     },
     {
         name: 'Rome Beauty',
         texture: 'soft',
         flavour: 'tart',
-        size: 'big'
+        size: 'big',
+        url: 'https://en.wikipedia.org/wiki/Rome_apple'
     },
     {
         name: 'Cortland',
         texture: 'soft',
         flavour: 'sweet',
-        size: 'big'
+        size: 'big',
+        url: 'https://en.wikipedia.org/wiki/Cortland_(apple)'
     },
     {
         name: 'Winesap',
         texture: 'soft',
         flavour: 'sweet',
-        size: 'little'
+        size: 'little',
+        url: 'https://en.wikipedia.org/wiki/Winesap'
     },
     {
         name: 'Granny Smith',
         texture: 'crisp',
         flavour: 'tart',
-        size: 'big'
+        size: 'big',
+        url: 'https://en.wikipedia.org/wiki/Granny_Smith'
     },
     {
         name: 'Crab Apple',
         texture: 'crisp',
         flavour: 'tart',
-        size: 'little'
+        size: 'little',
+        url: 'https://en.wikipedia.org/wiki/Malus'
     },
     {
         name: 'Jonagold',
         texture: 'crisp',
         flavour: 'sweet',
-        size: 'little'
+        size: 'little',
+        url: 'https://en.wikipedia.org/wiki/Jonagold'
     },
     {
         name: 'Braeburn',
         texture: 'crisp',
         flavour: 'sweet',
-        size: 'big'
+        size: 'big',
+        url: 'https://en.wikipedia.org/wiki/Braeburn'
     },
     ],
 
@@ -55,49 +63,57 @@ const appleProperties = {
         name: 'McIntosh',
         texture: 'soft',
         flavour: 'tart',
-        size: 'little'
+        size: 'little',
+        url: 'https://en.wikipedia.org/wiki/McIntosh_(apple)'
     },
     {
         name: 'Cortland',
         texture: 'soft',
         flavour: 'tart',
-        size: 'big'
+        size: 'big',
+        url: 'https://en.wikipedia.org/wiki/Cortland_(apple)'
     },
     {
         name: 'Red Delicious',
         texture: 'soft',
         flavour: 'sweet',
-        size: 'big'
+        size: 'big',
+        url: 'https://en.wikipedia.org/wiki/Red_Delicious'
     },
     {
         name: 'Empire',
         texture: 'soft',
         flavour: 'sweet',
-        size: 'little'
+        size: 'little',
+        url: 'https://en.wikipedia.org/wiki/Empire_(apple)'
     },
     {
         name: 'Honeycrisp',
         texture: 'crisp',
         flavour: 'sweet',
-        size: 'big'
+        size: 'big',
+        url: 'https://en.wikipedia.org/wiki/Honeycrisp'
     },
     {
         name: 'Jazz',
         texture: 'crisp',
         flavour: 'sweet',
-        size: 'little'
+        size: 'little',
+        url: 'https://en.wikipedia.org/wiki/Jazz_(apple)'
     },
     {
         name: 'Pink Lady',
         texture: 'crisp',
         flavour: 'tart',
-        size: 'big'
+        size: 'big',
+        url: 'https://en.wikipedia.org/wiki/Cripps_Pink'
     },
     {
         name: 'Cameo',
         texture: 'crisp',
         flavour: 'tart',
-        size: 'little'
+        size: 'little',
+        url: 'https://en.wikipedia.org/wiki/Cameo_(apple)'
     },
 ]
 }
@@ -130,7 +146,7 @@ $('form').on('submit', function(e){
 
     // 7) Store the name of the object left in the finalChoice array in a variable called finalApple.
     const finalApple = finalChoice[0].name
-
+    const appleInfo = finalChoice[0].url
     // 6) Display the html to a single location on the page. Modify one of the html's so that if the name of the apple is crab apple, remove the word apple at the end of the sentence so that the word apple is not repeated. 
     let identifier = 'a';
     let apple = ' apple'
@@ -145,8 +161,8 @@ $('form').on('submit', function(e){
 
     $('.result').html(`
         <h3>You should try ${identifier}
-        <span class='final'>${finalApple}</span>${apple}!
-        </h3>`);
+        <span class='final'>${finalApple}</span>${apple}!</h3> 
+        <a href='${appleInfo}'>Click on me to learn more about your apple!</a>`);
 
     // 7) on submit button scroll to the result
     $('html, body').animate({
