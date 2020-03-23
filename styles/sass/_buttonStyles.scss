@@ -1,8 +1,11 @@
 .buttons {
-    margin-top: 40px;
-    width: 100vw;
+    margin-top: 15px;
     padding-top: 30px;
     padding-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .cuteButton input[type="radio"]:checked+label {
@@ -26,17 +29,18 @@ input[type="radio"] {
 .cuteButton label,
 .submit,
 .reset {
-    font-family: 'Raleway', sans-serif;
-    font-weight: regular;
+    // font-family: 'Raleway', sans-serif;
+    font-family: 'Josefin Sans', sans-serif;
+    letter-spacing: 1px;
     font-weight: 300;
-    padding: 10px 20px 10px 20px;
+    padding: 10px 20px;
     border: 3px solid transparent;
     border-radius: 20px;
     margin: 20px 30px 20px 30px;
     transition: 0.3s;
     background-color: #000e8e;
     line-height: 1.15;
-    font-size: 20px;
+    font-size: 22px;
     color: white;
     text-transform: lowercase;
 }
@@ -55,6 +59,15 @@ input[type="radio"] {
    background-color: #ff0000;
    text-transform: none;
 }   
+
+.submit {
+    width: 40%;
+}
+
+.reset {
+    width: 20%;
+    padding: 7px 15px;
+}
 
 .submit:hover,
 .reset:hover {

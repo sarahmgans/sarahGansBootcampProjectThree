@@ -267,26 +267,28 @@ section {
 }
 
 h1 {
-  font-family: 'Montserrat', sans-serif;
-  font-weight: bold;
+  font-family: 'Amatic SC', cursive;
+  font-weight: 700;
   text-transform: uppercase;
-  font-size: 50px;
-  letter-spacing: 0.5px;
+  font-size: 85px;
+  letter-spacing: 1px;
   color: #ff0000;
   margin-bottom: 0px;
   text-align: center;
 }
 
 h1 span {
-  display: inline-block;
+  display: block;
   margin: 0;
+  font-size: 90px;
 }
 
 h2,
 h3 {
-  font-family: 'Raleway', sans-serif;
-  font-weight: regular;
-  font-size: 25px;
+  font-family: 'Josefin Sans', sans-serif;
+  letter-spacing: 1px;
+  font-weight: 400;
+  font-size: 28px;
   margin: 30px 0px;
   color: black;
   text-align: center;
@@ -297,7 +299,7 @@ h3 {
 }
 
 .result a {
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Josefin Sans', sans-serif;
   font-weight: regular;
   font-size: 24px;
   text-decoration: none;
@@ -320,6 +322,7 @@ body {
   background-image: url(../assets/michael-weidner-tiPQCmdALWs-unsplash.jpg);
   background-size: cover;
   background-repeat: no-repeat;
+  background-position: center;
 }
 
 .textBackground {
@@ -341,10 +344,22 @@ h3 span.final {
 }
 
 .buttons {
-  margin-top: 40px;
-  width: 100vw;
+  margin-top: 15px;
   padding-top: 30px;
   padding-bottom: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .cuteButton input[type="radio"]:checked + label {
@@ -367,10 +382,10 @@ input[type="radio"] {
 .cuteButton label,
 .submit,
 .reset {
-  font-family: 'Raleway', sans-serif;
-  font-weight: regular;
+  font-family: 'Josefin Sans', sans-serif;
+  letter-spacing: 1px;
   font-weight: 300;
-  padding: 10px 20px 10px 20px;
+  padding: 10px 20px;
   border: 3px solid transparent;
   border-radius: 20px;
   margin: 20px 30px 20px 30px;
@@ -378,7 +393,7 @@ input[type="radio"] {
   transition: 0.3s;
   background-color: #000e8e;
   line-height: 1.15;
-  font-size: 20px;
+  font-size: 22px;
   color: white;
   text-transform: lowercase;
 }
@@ -396,6 +411,15 @@ input[type="radio"] {
   color: white;
   background-color: #ff0000;
   text-transform: none;
+}
+
+.submit {
+  width: 40%;
+}
+
+.reset {
+  width: 20%;
+  padding: 7px 15px;
 }
 
 .submit:hover,
@@ -417,12 +441,6 @@ input[type="radio"] {
 }
 
 @media (max-width: 754px) {
-  .myForm > fieldset:nth-child(1) > div:nth-child(2),
-  .myForm > fieldset:nth-child(3) > div:nth-child(2) {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-  }
   .cuteButton label, .submit, .reset {
     margin-right: 5px;
     margin-left: 5px;
