@@ -33,11 +33,14 @@ h1 span {
     justify-content: center;
 }
 
+p {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 22px;
+}
+
 h2,
 h3 {
-    // font-family: 'Raleway', sans-serif;
     font-family: 'Josefin Sans', sans-serif;
-    // font-weight: regular;
     letter-spacing: 1px;
     font-weight: 400;
     font-size: 28px;
@@ -56,17 +59,17 @@ h3 {
     font-weight: regular;
     font-size: 24px;
     text-decoration: none;
-    color: black;
+    color: #000e8e;
     background-color: white;
     padding: 15px;
     border-radius: 20px;
     margin-bottom: 20px;
-    border: 3px dotted red;
+    border: 3px dotted #ff0000;
     transition: 0.3s;
 }
 
 .result a:hover {
-    color: red;
+    color: #ff0000;
     border: 3px dotted #000e8e;
 }
 

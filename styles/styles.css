@@ -289,6 +289,11 @@ h1 span {
           justify-content: center;
 }
 
+p {
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 22px;
+}
+
 h2,
 h3 {
   font-family: 'Josefin Sans', sans-serif;
@@ -309,18 +314,18 @@ h3 {
   font-weight: regular;
   font-size: 24px;
   text-decoration: none;
-  color: black;
+  color: #000e8e;
   background-color: white;
   padding: 15px;
   border-radius: 20px;
   margin-bottom: 20px;
-  border: 3px dotted red;
+  border: 3px dotted #ff0000;
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
 
 .result a:hover {
-  color: red;
+  color: #ff0000;
   border: 3px dotted #000e8e;
 }
 
@@ -379,7 +384,6 @@ header {
 }
 
 .cuteButton input[type="radio"]:checked + label {
-  color: #ff0000;
   border: 3px solid #ff0000;
 }
 
