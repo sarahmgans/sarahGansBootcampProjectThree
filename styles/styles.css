@@ -279,9 +279,14 @@ h1 {
 }
 
 h1 span {
-  display: block;
   margin: 0;
   font-size: 90px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 h2,
@@ -341,6 +346,17 @@ h3 {
 h3 span.final {
   color: #ff0000;
   font-size: 35px;
+}
+
+.smallApple img {
+  width: 70px;
+  display: inline-block;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .buttons {
