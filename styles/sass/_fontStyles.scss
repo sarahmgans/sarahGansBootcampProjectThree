@@ -27,10 +27,8 @@ h1 {
 }
 
 h1 span {
-    margin: 0;
     font-size: 90px;
-    display: flex;
-    justify-content: center;
+    display: inline-block;
 }
 
 p {
@@ -97,15 +95,7 @@ h3 span.final {
     font-size: 35px;
 }
 
-.smallApple img {
-    width: 70px;
-    display: inline-block;
-}
 
-header {
-    display: flex;
-
-}
 
 
 
