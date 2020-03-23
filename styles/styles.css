@@ -271,7 +271,7 @@ h1 {
   font-weight: bold;
   text-transform: uppercase;
   font-size: 50px;
-  letter-spacing: 1px;
+  letter-spacing: 0.5px;
   color: #ff0000;
   margin-bottom: 0px;
   text-align: center;
@@ -307,13 +307,19 @@ h3 {
   border-radius: 20px;
   margin-bottom: 20px;
   border: 3px dotted red;
-  margin-right: 10px;
-  margin-left: 10px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.result a:hover {
+  color: red;
+  border: 3px dotted #000e8e;
 }
 
 body {
   background-image: url(../assets/michael-weidner-tiPQCmdALWs-unsplash.jpg);
   background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .textBackground {
@@ -424,5 +430,10 @@ input[type="radio"] {
   .cuteButton label {
     margin-top: 0px;
     margin-bottom: 0px;
+  }
+  .result a,
+  h1 {
+    margin-right: 10px;
+    margin-left: 10px;
   }
 }
