@@ -144,10 +144,11 @@ $('form').on('submit', function(e){
         }
     }
 
-    // 7) Store the name of the object left in the finalChoice array in a variable called finalApple.
+    // 7) Store the name of the object left in the finalChoice array in a variable called finalApple and the url each of the apples in a variable called appleInfo. 
     const finalApple = finalChoice[0].name
     const appleInfo = finalChoice[0].url
-    // 6) Display the html to a single location on the page. Modify one of the html's so that if the name of the apple is crab apple, remove the word apple at the end of the sentence so that the word apple is not repeated. 
+
+    // 6) Display the html to a single location on the page. Modify one of the html's so that if the name of the apple is crab apple, the word apple at the end of the sentence is removed so that the word apple is not repeated. Modify another one of the html's so that if the name of the apple is empire, the word in front of Empire is replaced with the word an. 
     let identifier = 'a';
     let apple = ' apple'
 
@@ -170,7 +171,7 @@ $('form').on('submit', function(e){
     }, 800);
 });
 
-// 8) On reset, clear the html that was posted to the .results section of the page. 
+// 8) On reset, clear the html that was posted to the .results section of the page, empty the radio buttons and scroll to the top of the page.  
 $('.reset').click(function () {
     $('.result').empty();
     $('html, body').animate({
