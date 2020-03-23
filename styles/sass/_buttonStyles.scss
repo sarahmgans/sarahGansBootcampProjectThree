@@ -61,12 +61,13 @@ input[type="radio"] {
 }   
 
 .submit {
-    width: 40%;
+    width: auto;
 }
 
 .reset {
     width: 20%;
     padding: 7px 15px;
+    margin-top: 12px;
 }
 
 .submit:hover,

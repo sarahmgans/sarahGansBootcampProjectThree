@@ -275,6 +275,7 @@ h1 {
   color: #ff0000;
   margin-bottom: 0px;
   text-align: center;
+  margin-top: 50px;
 }
 
 h1 span {
@@ -340,7 +341,6 @@ h3 {
 h3 span.final {
   color: #ff0000;
   font-size: 35px;
-  display: block;
 }
 
 .buttons {
@@ -414,12 +414,13 @@ input[type="radio"] {
 }
 
 .submit {
-  width: 40%;
+  width: auto;
 }
 
 .reset {
   width: 20%;
   padding: 7px 15px;
+  margin-top: 12px;
 }
 
 .submit:hover,
@@ -453,5 +454,11 @@ input[type="radio"] {
   h1 {
     margin-right: 10px;
     margin-left: 10px;
+  }
+  .submit {
+    width: auto;
+  }
+  .reset {
+    width: 155px;
   }
 }
