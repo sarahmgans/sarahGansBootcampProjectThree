@@ -287,6 +287,8 @@ p {
   font-size: 22px;
   margin-left: 10px;
   margin-right: 10px;
+  font-style: italic;
+  font-weight: lighter;
 }
 
 h2,
