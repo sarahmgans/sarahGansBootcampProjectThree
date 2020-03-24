@@ -271,35 +271,43 @@ header {
   background-image: url(../assets/gabriela-tamara-cycman-wDf1Qmd9UUs-unsplash.jpg);
   background-size: cover;
   background-repeat: no-repeat;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-position: center;
 }
 
 h1 {
   text-transform: uppercase;
   font-family: 'Bebas Neue', cursive;
   font-weight: bold;
-  font-size: 100px;
-  color: white;
+  font-size: 110px;
+  color: #fef9ff;
   text-align: center;
-  margin-top: 260px;
 }
 
 p {
-  font-family: 'Open Sans Condensed', sans-serif;
-  font-size: 22px;
+  font-family: Montserrat;
+  font-size: 26px;
   margin-left: 10px;
   margin-right: 10px;
   font-weight: 300;
   text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 1.3px;
+  padding-top: 35px;
+  margin-top: 0px;
+  color: #303030;
 }
 
 h2,
 h3 {
-  font-family: 'Open Sans Condensed', sans-serif;
+  font-family: 'Old Standard TT', serif;
   letter-spacing: 1px;
   font-weight: 400;
   font-size: 25px;
   margin: 30px 0px;
-  color: black;
+  color: #303030;
   text-align: center;
   width: 80%;
   line-height: 1.15;
@@ -307,42 +315,46 @@ h3 {
   border-radius: 20px;
 }
 
+.myForm > fieldset:nth-child(1) > h2:nth-child(1) {
+  margin-top: 25px;
+}
+
 .result a {
-  font-family: 'Open Sans Condensed', sans-serif;
-  font-weight: regular;
+  font-family: 'Montserrat';
+  font-weight: 300;
   font-size: 24px;
   text-decoration: none;
-  color: #000e8e;
-  background-color: white;
+  color: #303030;
+  background-color: transparent;
   padding: 15px;
-  border-radius: 20px;
-  margin-bottom: 20px;
-  border: 3px solid #ff0000;
+  margin-bottom: 45px;
+  border: 1px solid #303030;
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
 
 .result a:hover {
-  color: #ff0000;
-  border: 3px solid #000e8e;
+  background-color: lightgrey;
 }
 
 h3 {
-  color: black;
+  color: #303030;
   font-size: 30px;
   line-height: 45px;
   text-transform: none;
 }
 
 h3 span.final {
-  color: #ff0000;
   font-size: 35px;
+  font-weight: bold;
+}
+
+main {
+  background-color: #fef9ff;
 }
 
 .buttons {
-  margin-top: 15px;
-  padding-top: 30px;
-  padding-bottom: 10px;
+  padding-bottom: 30px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -356,10 +368,17 @@ h3 span.final {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  border-top: 1px solid darkgrey;
+  width: 100vw;
+}
+
+.myForm > fieldset:nth-child(4) {
+  padding-bottom: 55px;
 }
 
 .cuteButton input[type="radio"]:checked + label {
-  border: 3px solid #ff0000;
+  background-color: lightgrey;
+  color: #303030;
 }
 
 .cuteButton {
@@ -377,51 +396,48 @@ input[type="radio"] {
 .cuteButton label,
 .submit,
 .reset {
-  font-family: 'Open Sans Condensed', sans-serif;
-  letter-spacing: 2px;
-  font-weight: 300;
-  padding: 10px 20px;
-  border: 3px solid transparent;
-  border-radius: 20px;
-  margin: 20px 30px 20px 30px;
+  font-family: Montserrat;
+  font-size: 22px;
+  text-transform: uppercase;
+  text-decoration: none;
+  background-color: transparent;
+  color: #303030;
+  padding: 15px;
   -webkit-transition: 0.3s;
   transition: 0.3s;
-  background-color: #000e8e;
-  line-height: 1.15;
-  font-size: 20px;
-  color: white;
-  text-transform: lowercase;
+  font-weight: 300;
+  letter-spacing: 1px;
+  border: 1px solid rgba(73, 71, 71, 0.3);
+  margin: 40px;
 }
 
 .cuteButton label:hover,
-.submit:hover,
-.reset:hover {
-  border: 3px solid #ff0000;
+a:hover {
+  background-color: lightgrey;
+  color: #303030;
 }
 
 .submit,
 .reset {
-  border: 3px solid #000e8e;
-  padding: 20px 30px 20px 30px;
-  color: white;
-  background-color: #ff0000;
-  text-transform: none;
-}
-
-.submit {
-  width: auto;
+  font-weight: 300;
+  font-size: 24px;
+  border-bottom: 1px solid transparent;
+  border-right: none;
+  border-left: none;
+  border-top: none;
+  letter-spacing: 1.3px;
+  margin-bottom: 0px;
+  color: #303030;
+  padding-bottom: 5px;
 }
 
 .reset {
-  width: 20%;
-  padding: 7px 15px;
-  margin-top: 12px;
+  margin-bottom: 10px;
 }
 
 .submit:hover,
 .reset:hover {
-  color: #000e8e;
-  border: 3px solid #000e8e;
+  border-bottom: 1px solid #303030;
 }
 
 .top {
@@ -441,48 +457,16 @@ a {
   font-size: 22px;
   text-transform: uppercase;
   text-decoration: none;
-  background: white;
-  color: black;
-  padding: 15px;
+  background: #fef9ff;
+  color: #303030;
+  padding: 20px 30px;
   -webkit-transition: 0.3s;
   transition: 0.3s;
-  font-weight: 600;
-  letter-spacing: 1px;
+  font-weight: 300;
+  letter-spacing: 1.3px;
+  border: 1px solid transparent;
 }
 
-.fas {
-  color: black;
-  margin-left: 10px;
-}
-
-a:hover {
+.result a:hover {
   background: lightgrey;
-}
-
-.borderLeft,
-.borderRight {
-  border-bottom: 3px solid white;
-  height: 20px;
-}
-
-@media (max-width: 754px) {
-  .cuteButton label, .submit, .reset {
-    margin-right: 5px;
-    margin-left: 5px;
-  }
-  .cuteButton label {
-    margin-top: 0px;
-    margin-bottom: 0px;
-  }
-  .result a,
-  h1 {
-    margin-right: 10px;
-    margin-left: 10px;
-  }
-  .submit {
-    width: auto;
-  }
-  .reset {
-    width: 155px;
-  }
 }

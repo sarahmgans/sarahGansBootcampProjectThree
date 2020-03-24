@@ -17,38 +17,41 @@ header {
     background-image: url(../assets/gabriela-tamara-cycman-wDf1Qmd9UUs-unsplash.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-
-
+    justify-content: center;
+    background-position: center;
 }
 
 h1 {
     text-transform: uppercase; 
     font-family: 'Bebas Neue', cursive;
     font-weight: bold;
-    font-size: 100px;
-    color: white;
+    font-size: 110px;
+    color: #fef9ff;
     text-align: center;
-    margin-top: 260px;
 }
 
 p {
-    font-family: 'Open Sans Condensed', sans-serif;
-    font-size: 22px;
+    font-family: Montserrat;
+    font-size: 26px;
     margin-left: 10px;
     margin-right: 10px;
     font-weight: 300;
     text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1.3px;
+    padding-top: 35px;
+    margin-top: 0px;
+    color: #303030;
 }
 
 h2,
 h3 {
-    // font-family: 'Josefin Sans', sans-serif;
-    font-family: 'Open Sans Condensed', sans-serif;
+    font-family: 'Old Standard TT', serif;
     letter-spacing: 1px;
     font-weight: 400;
     font-size: 25px;
     margin: 30px 0px;
-    color: black;
+    color: #303030;
     text-align: center;
     width: 80%;
     line-height: 1.15;
@@ -56,38 +59,41 @@ h3 {
     border-radius: 20px;
 }
 
+.myForm > fieldset:nth-child(1) > h2:nth-child(1) {
+    margin-top: 25px;
+}
+
 .result a {
-    // font-family: 'Raleway', sans-serif;
-    // font-family: 'Josefin Sans', sans-serif;
-    font-family: 'Open Sans Condensed', sans-serif;
-    font-weight: regular;
+    font-family: 'Montserrat';
+    font-weight: 300;
     font-size: 24px;
     text-decoration: none;
-    color: #000e8e;
-    background-color: white;
+    color:#303030;
+    background-color: transparent;
     padding: 15px;
-    border-radius: 20px;
-    margin-bottom: 20px;
-    border: 3px solid #ff0000;
+    margin-bottom: 45px;
+    border: 1px solid #303030;
     transition: 0.3s;
 }
 
 .result a:hover {
-    color: #ff0000;
-    border: 3px solid #000e8e;
+    background-color: lightgrey;
 }
 
-
 h3 {
-    color: black;
+    color: #303030;
     font-size: 30px;
     line-height: 45px;
     text-transform: none;
 }
 
 h3 span.final {
-    color: #ff0000;
     font-size: 35px;
+    font-weight: bold;
+}
+
+main {
+    background-color: #fef9ff;
 }
 
 

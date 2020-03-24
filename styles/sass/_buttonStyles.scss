@@ -1,16 +1,20 @@
 .buttons {
-    margin-top: 15px;
-    padding-top: 30px;
-    padding-bottom: 10px;
+    padding-bottom: 30px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    border-top: 1px solid darkgrey;
+    width: 100vw;
+}
+
+.myForm > fieldset:nth-child(4) {
+    padding-bottom: 55px;
 }
 
 .cuteButton input[type="radio"]:checked+label {
-    // color: #ff0000;
-    border: 3px solid #ff0000;
+    background-color: lightgrey;
+    color: #303030;
 }
 
 .cuteButton {
@@ -29,52 +33,48 @@ input[type="radio"] {
 .cuteButton label,
 .submit,
 .reset {
-    // font-family: 'Raleway', sans-serif;
-    // font-family: 'Josefin Sans', sans-serif;
-    font-family: 'Open Sans Condensed', sans-serif;
-    letter-spacing: 2px;
-    font-weight: 300;
-    padding: 10px 20px;
-    border: 3px solid transparent;
-    border-radius: 20px;
-    margin: 20px 30px 20px 30px;
+    font-family: Montserrat;
+    font-size: 22px;
+    text-transform: uppercase;
+    text-decoration: none;
+    background-color: transparent;
+    color: #303030;
+    padding: 15px;
     transition: 0.3s;
-    background-color: #000e8e;
-    line-height: 1.15;
-    font-size: 20px;
-    color: white;
-    text-transform: lowercase;
+    font-weight: 300;
+    letter-spacing: 1px;
+    border: 1px solid rgba(73, 71, 71, 0.3);
+    margin: 40px;
 }
 
 .cuteButton label:hover,
-.submit:hover,
-.reset:hover {
-    border: 3px solid #ff0000;
+a:hover {
+    background-color: lightgrey;
+    color: #303030;
 }
 
 .submit,
 .reset {
-   border: 3px solid #000e8e;
-   padding: 20px 30px 20px 30px;
-   color: white;
-   background-color: #ff0000;
-   text-transform: none;
+    font-weight: 300;
+    font-size: 24px;
+    border-bottom: 1px solid transparent;
+    border-right: none;
+    border-left: none;
+    border-top: none;
+    letter-spacing: 1.3px;
+    margin-bottom: 0px;
+    color: #303030;
+    padding-bottom: 5px;
 }   
 
-.submit {
-    width: auto;
+.reset {
+    margin-bottom: 10px;
 }
 
-.reset {
-    width: 20%;
-    padding: 7px 15px;
-    margin-top: 12px;
-}
 
 .submit:hover,
 .reset:hover {
-    color: #000e8e;
-    border: 3px solid #000e8e;
+    border-bottom: 1px solid #303030;;
 }
 
 .top {
@@ -94,28 +94,19 @@ a {
     font-size: 22px;
     text-transform: uppercase;
     text-decoration: none;
-    background: white;
-    color: black;
-    padding: 15px;
+    background: #fef9ff;
+    color: #303030;
+    padding: 20px 30px;
     transition: 0.3s;
-    font-weight: 600;
-    letter-spacing: 1px;
+    font-weight: 300;
+    letter-spacing: 1.3px;
+    border: 1px solid transparent;
 }
 
-.fas {
-    color: black;
-    margin-left: 10px;
-}
-
-a:hover {
+.result a:hover {
     background: lightgrey;
 }
 
-.borderLeft,
-.borderRight {
-    border-bottom: 3px solid white;
-    height: 20px;
-}
 
 
 
