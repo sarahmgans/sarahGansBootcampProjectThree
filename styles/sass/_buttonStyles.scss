@@ -107,9 +107,14 @@ a {
     margin-left: 10px;
 }
 
-a:hover,
-.fas:hover {
+a:hover {
     background: lightgrey;
+}
+
+.borderLeft,
+.borderRight {
+    border-bottom: 3px solid white;
+    height: 20px;
 }
 
 
