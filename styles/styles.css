@@ -275,7 +275,7 @@ h1 {
   color: #ff0000;
   margin-bottom: 0px;
   text-align: center;
-  margin-top: 50px;
+  margin-top: 35px;
 }
 
 h1 span {
@@ -288,7 +288,7 @@ p {
   margin-left: 10px;
   margin-right: 10px;
   font-style: italic;
-  font-weight: lighter;
+  font-weight: 300;
 }
 
 h2,
@@ -296,7 +296,7 @@ h3 {
   font-family: 'Josefin Sans', sans-serif;
   letter-spacing: 1px;
   font-weight: 400;
-  font-size: 28px;
+  font-size: 25px;
   margin: 30px 0px;
   color: black;
   text-align: center;
@@ -399,7 +399,7 @@ input[type="radio"] {
   transition: 0.3s;
   background-color: #000e8e;
   line-height: 1.15;
-  font-size: 22px;
+  font-size: 20px;
   color: white;
   text-transform: lowercase;
 }
