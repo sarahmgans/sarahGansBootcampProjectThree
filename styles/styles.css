@@ -266,19 +266,21 @@ section {
           align-items: center;
 }
 
-h1 {
-  font-family: 'Fredericka the Great', cursive;
-  font-size: 75px;
-  letter-spacing: 1px;
-  color: #ff0000;
-  margin-bottom: 0px;
-  text-align: center;
-  margin-top: 35px;
-  text-shadow: -1px -1px 0 #000;
+header {
+  height: 100vh;
+  background-image: url(../assets/gabriela-tamara-cycman-wDf1Qmd9UUs-unsplash.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
-h1 span {
-  display: inline-block;
+h1 {
+  text-transform: uppercase;
+  font-family: 'Bebas Neue', cursive;
+  font-weight: bold;
+  font-size: 100px;
+  color: white;
+  text-align: center;
+  margin-top: 260px;
 }
 
 p {
@@ -287,6 +289,7 @@ p {
   margin-left: 10px;
   margin-right: 10px;
   font-weight: 300;
+  text-align: center;
 }
 
 h2,
@@ -322,18 +325,6 @@ h3 {
 .result a:hover {
   color: #ff0000;
   border: 3px solid #000e8e;
-}
-
-body {
-  background-image: url(../assets/gabriela-tamara-cycman-wDf1Qmd9UUs-unsplash.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-.textBackground {
-  background-color: rgba(255, 255, 255, 0.6);
-  margin: 0 auto;
 }
 
 h3 {
@@ -443,6 +434,30 @@ input[type="radio"] {
   right: 545px;
   font-size: 51px;
   color: transparent;
+}
+
+a {
+  font-family: Montserrat;
+  font-size: 22px;
+  text-transform: uppercase;
+  text-decoration: none;
+  background: white;
+  color: black;
+  padding: 15px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.fas {
+  color: black;
+  margin-left: 10px;
+}
+
+a:hover,
+.fas:hover {
+  background: lightgrey;
 }
 
 @media (max-width: 754px) {

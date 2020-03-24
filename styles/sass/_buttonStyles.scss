@@ -88,3 +88,29 @@ input[type="radio"] {
     font-size: 51px;
     color: transparent;
 }
+
+a {
+    font-family: Montserrat;
+    font-size: 22px;
+    text-transform: uppercase;
+    text-decoration: none;
+    background: white;
+    color: black;
+    padding: 15px;
+    transition: 0.3s;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.fas {
+    color: black;
+    margin-left: 10px;
+}
+
+a:hover,
+.fas:hover {
+    background: lightgrey;
+}
+
+
+

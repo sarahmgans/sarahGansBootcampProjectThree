@@ -118,6 +118,14 @@ const appleProperties = {
 ]
 }
 
+// 0) attach event listener onto the start link on the cover page
+$('a').on('click', function(e){
+    e.preventDefault();
+    $('html, body').animate({
+        scrollTop: $('.textBackground').offset().top
+    }, 800);
+})
+
 // 1) attach event listener onto submit on form
 $('form').on('submit', function(e){
 
