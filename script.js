@@ -118,9 +118,6 @@ const appleProperties = {
 ]
 }
 
-$('input').attr('autocomplete', 'off'); 
-
-
 
 // 0) scroll function
 const scroll = function (scrollTo) {
@@ -156,7 +153,7 @@ $('form').on('submit', function(e){
     const finalChoice = [];
     
     // 6) Create a for loop that loops through and matches the property/value pairs with the saved values from the checked texture, flavour and size inputs. This will result in one array named the finalChoice array. 
-    for (let i = 0; i < appleChoices.length; i++) {
+    for (var i = 0; i < appleChoices.length; i++) {
         const store = appleChoices[i]
         if (store.texture === texture && store.flavour === flavour && store.size === size) {
             finalChoice.push(store);
@@ -168,8 +165,8 @@ $('form').on('submit', function(e){
     const appleInfo = finalChoice[0].url
 
     // 6) Display the html to a single location on the page. Modify one of the html's so that if the name of the apple is crab apple, the word apple at the end of the sentence is removed so that the word apple is not repeated. Modify another one of the html's so that if the name of the apple is empire, the word in front of Empire is replaced with the word an. 
-    let identifier = 'a';
-    let apple = ' apple'
+    var identifier = 'a';
+    var apple = ' apple'
 
     if (finalApple === 'Empire') { 
         identifier = 'an';
@@ -179,8 +176,7 @@ $('form').on('submit', function(e){
         apple ='';
     }
 
-    $('.result').html(`
-        <h3>You should try ${identifier}
+    $('.result').html(`<h3>You should try ${identifier}
         <span class='final'>${finalApple}</span>${apple}!</h3> 
         <a href='${appleInfo}'>Learn more about the ${finalApple}</a>`);
 
@@ -192,14 +188,4 @@ $('form').on('submit', function(e){
 $('.reset').click(function () {
     $('.result').empty();
     scroll('.textBackground');
-    
 });
-
-
-
-
-
-
-
-
-

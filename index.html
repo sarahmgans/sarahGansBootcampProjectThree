@@ -17,15 +17,13 @@
         <a href="#startQuiz" class="start">Start</a>
     </header>
     <main id= "startQuiz" class="textBackground">
-        <div class="wrapper">
-        <p>Answer the questions below to find your new favorite apple</p>
-        <section class="quiz">
+        <section class="quiz wrapper">
+            <p>Answer the questions below to find your new favorite apple</p>
             <div class="appleQuiz" id="quizPomme">
                 <form action="#" method="#" class="myForm" name="myForm">
                     <fieldset>
                         <h2>How will you be using your apple?</h2>
                         <div class="cuteButton">
-                            
                             <input type="radio" name="use" value="cooking" id="cooking" required autocomplete="off">
                             <label for="cooking">Cooking</label>
                             
@@ -64,16 +62,19 @@
                         </div>
                     </fieldset>
                         <div class="buttons">
-                            <input class="submit" type="submit" value="Reveal my Apple"/>
-                            <input class="reset" type="reset" value="Reset">
+                            <div>
+                                <input class="submit" type="submit" value="Reveal my Apple"/>
+                            </div>
+                            <div>
+                                <input class="reset" type="reset" value="Reset">
+                            </div>
                         </div>
                     </form>
                 </div>
-            <section class="result" id="result"></section>
+            <section class="result wrapper" id="result"></section>
         </section>
         </div>
     </main>
-    </div>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.js"></script>
 <script src="script.js"></script>
 </body>

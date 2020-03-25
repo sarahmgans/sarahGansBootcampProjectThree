@@ -308,7 +308,7 @@ h1 {
 
 p {
   font-family: Montserrat;
-  font-size: 26px;
+  font-size: 24px;
   margin-left: 10px;
   margin-right: 10px;
   font-weight: 300;
@@ -318,6 +318,7 @@ p {
   padding-top: 35px;
   margin-top: 0px;
   color: #303030;
+  margin-bottom: 5px;
 }
 
 h2,
@@ -541,9 +542,6 @@ a {
 }
 
 @media (max-width: 500px) {
-  header {
-    height: 90vh;
-  }
   h1 {
     font-size: 85px;
     line-height: 85px;
@@ -555,6 +553,7 @@ a {
   }
   h2 {
     font-size: 18px;
+    margin-bottom: 10px;
   }
   .cuteButton label {
     font-size: 16px;

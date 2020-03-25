@@ -50,9 +50,9 @@
 }
 
 @media(max-width: 500px) {
-    header {
-        height: 90vh;
-    }
+    // header {
+    //     height: 90vh;
+    // }
 
     h1 {
         font-size: 85px;
@@ -67,6 +67,7 @@
 
     h2 {
         font-size: 18px;
+        margin-bottom: 10px;
     }
 
     .cuteButton label {
