@@ -566,3 +566,13 @@ a {
     font-size: 16px;
   }
 }
+
+@media (max-width: 306px) {
+  header {
+    height: 100vh;
+  }
+  h1 {
+    font-size: 85px;
+    line-height: 85px;
+  }
+}
