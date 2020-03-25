@@ -329,7 +329,6 @@ h3 {
   margin: 30px 0px;
   color: #303030;
   text-align: center;
-  width: 80%;
   line-height: 1.15;
   padding: 10px;
 }
@@ -565,5 +564,11 @@ a {
   .result a,
   a {
     font-size: 16px;
+  }
+}
+
+@media (max-width: 330px) {
+  header {
+    height: 110vh;
   }
 }
