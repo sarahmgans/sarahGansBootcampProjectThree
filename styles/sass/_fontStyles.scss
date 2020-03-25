@@ -56,7 +56,6 @@ h3 {
     width: 80%;
     line-height: 1.15;
     padding: 10px;
-    border-radius: 20px;
 }
 
 .myForm > fieldset:nth-child(1) > h2:nth-child(1) {
@@ -76,10 +75,6 @@ h3 {
     transition: 0.3s;
 }
 
-.result a:hover {
-    background-color: lightgrey;
-}
-
 h3 {
     color: #303030;
     font-size: 30px;
@@ -90,6 +85,7 @@ h3 {
 h3 span.final {
     font-size: 35px;
     font-weight: bold;
+    color: #ca5d65;
 }
 
 main {

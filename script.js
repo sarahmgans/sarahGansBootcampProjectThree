@@ -171,7 +171,7 @@ $('form').on('submit', function(e){
     $('.result').html(`
         <h3>You should try ${identifier}
         <span class='final'>${finalApple}</span>${apple}!</h3> 
-        <a href='${appleInfo}'>Click on me to learn more about the ${finalApple}</a>`);
+        <a href='${appleInfo}'>Learn more about the ${finalApple}</a>`);
 
     // 7) on submit button scroll to the result
     $('html, body').animate({

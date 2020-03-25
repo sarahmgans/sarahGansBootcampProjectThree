@@ -1,10 +1,10 @@
 .buttons {
-    padding-bottom: 30px;
+    padding-bottom: 35px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border-top: 1px solid darkgrey;
+    border-top: 1px solid lightgrey;
     width: 100vw;
 }
 
@@ -13,8 +13,9 @@
 }
 
 .cuteButton input[type="radio"]:checked+label {
-    background-color: lightgrey;
-    color: #303030;
+    background-color: #ca5d65;
+    // color: #303030;
+    color: #fef9ff;
 }
 
 .cuteButton {
@@ -49,8 +50,8 @@ input[type="radio"] {
 
 .cuteButton label:hover,
 a:hover {
-    background-color: lightgrey;
-    color: #303030;
+    background-color: #ca5d65;
+    color: #fef9ff;
 }
 
 .submit,
@@ -65,6 +66,7 @@ a:hover {
     margin-bottom: 0px;
     color: #303030;
     padding-bottom: 5px;
+    background-color: transparent;
 }   
 
 .reset {
@@ -104,7 +106,7 @@ a {
 }
 
 .result a:hover {
-    background: lightgrey;
+    background: #65734e;
 }
 
 

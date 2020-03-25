@@ -312,7 +312,6 @@ h3 {
   width: 80%;
   line-height: 1.15;
   padding: 10px;
-  border-radius: 20px;
 }
 
 .myForm > fieldset:nth-child(1) > h2:nth-child(1) {
@@ -333,10 +332,6 @@ h3 {
   transition: 0.3s;
 }
 
-.result a:hover {
-  background-color: lightgrey;
-}
-
 h3 {
   color: #303030;
   font-size: 30px;
@@ -347,6 +342,7 @@ h3 {
 h3 span.final {
   font-size: 35px;
   font-weight: bold;
+  color: #ca5d65;
 }
 
 main {
@@ -354,7 +350,7 @@ main {
 }
 
 .buttons {
-  padding-bottom: 30px;
+  padding-bottom: 35px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -368,7 +364,7 @@ main {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  border-top: 1px solid darkgrey;
+  border-top: 1px solid lightgrey;
   width: 100vw;
 }
 
@@ -377,8 +373,8 @@ main {
 }
 
 .cuteButton input[type="radio"]:checked + label {
-  background-color: lightgrey;
-  color: #303030;
+  background-color: #ca5d65;
+  color: #fef9ff;
 }
 
 .cuteButton {
@@ -413,8 +409,8 @@ input[type="radio"] {
 
 .cuteButton label:hover,
 a:hover {
-  background-color: lightgrey;
-  color: #303030;
+  background-color: #ca5d65;
+  color: #fef9ff;
 }
 
 .submit,
@@ -429,6 +425,7 @@ a:hover {
   margin-bottom: 0px;
   color: #303030;
   padding-bottom: 5px;
+  background-color: transparent;
 }
 
 .reset {
@@ -468,5 +465,5 @@ a {
 }
 
 .result a:hover {
-  background: lightgrey;
+  background: #65734e;
 }
