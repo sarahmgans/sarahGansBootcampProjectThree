@@ -327,7 +327,7 @@ h3 {
   background-color: transparent;
   padding: 15px;
   margin-bottom: 45px;
-  border: 1px solid #65734e;
+  border: 1px solid #303030;
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
@@ -364,7 +364,7 @@ main {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  border-top: 1px solid #65734e80;
+  border-top: 1px solid lightgrey;
   width: 100vw;
 }
 
@@ -374,6 +374,7 @@ main {
 
 .cuteButton input[type="radio"]:checked + label {
   background-color: #ca5d65;
+  border: 1px solid transparent;
   color: #fef9ff;
 }
 
@@ -403,7 +404,7 @@ input[type="radio"] {
   transition: 0.3s;
   font-weight: 300;
   letter-spacing: 1px;
-  border: 1px solid #65734e;
+  border: 1px solid #303030;
   margin: 40px;
 }
 
@@ -435,7 +436,7 @@ a:hover {
 
 .submit:hover,
 .reset:hover {
-  border-bottom: 1px solid #65734e;
+  border-bottom: 1px solid #303030;
 }
 
 .top {
@@ -462,9 +463,11 @@ a {
   transition: 0.3s;
   font-weight: 300;
   letter-spacing: 1.3px;
-  border: 1px solid #65734e;
+  border: 1px solid transparent;
 }
 
 .result a:hover {
-  background: #65734e;
+  background: #C3DAB7;
+  color: black;
+  border: 1px solid #303030;
 }
