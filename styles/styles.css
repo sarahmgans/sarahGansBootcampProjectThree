@@ -569,6 +569,6 @@ a {
 
 @media (max-width: 330px) {
   header {
-    height: 110vh;
+    height: 100vh;
   }
 }
