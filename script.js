@@ -118,12 +118,23 @@ const appleProperties = {
 ]
 }
 
+$('input').attr('autocomplete', 'off'); 
+
+
+
+// 0) scroll function
+const scroll = function (scrollTo) {
+    $('html, body').animate({
+        scrollTop: $(scrollTo).offset().top
+    }, 800);
+}
+
 // 0) attach event listener onto the start link on the cover page
+
 $('a').on('click', function(e){
     e.preventDefault();
-    $('html, body').animate({
-        scrollTop: $('.textBackground').offset().top
-    }, 800);
+    scroll('.textBackground');
+    
 })
 
 // 1) attach event listener onto submit on form
@@ -174,18 +185,20 @@ $('form').on('submit', function(e){
         <a href='${appleInfo}'>Learn more about the ${finalApple}</a>`);
 
     // 7) on submit button scroll to the result
-    $('html, body').animate({
-        scrollTop: $('.result').offset().top
-    }, 800);
+    scroll('.result');
 });
 
 // 8) On reset, clear the html that was posted to the .results section of the page, empty the radio buttons and scroll to the top of the page.  
 $('.reset').click(function () {
     $('.result').empty();
-    $('html, body').animate({
-        scrollTop: $('.textBackground').offset().top
-    }, 800);
+    scroll('.textBackground');
+    
 });
+
+
+
+
+
 
 
 

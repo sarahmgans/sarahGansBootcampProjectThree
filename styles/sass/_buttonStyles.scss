@@ -46,6 +46,7 @@ input[type="radio"] {
     font-weight: 300;
     letter-spacing: 1px;
     margin: 40px;
+    border: 1px solid #ca5d65;
 }
 
 .cuteButton label:hover,
@@ -108,7 +109,8 @@ a {
     transition: 0.3s;
     font-weight: 300;
     letter-spacing: 1.3px;
-    border: 1px solid transparent;
+    // border: 1px solid transparent;
+    border: 1px solid #ca5d65;
 }
 
 .result a:hover {
