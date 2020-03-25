@@ -245,6 +245,11 @@ img {
   line-height: 0;
 }
 
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
 fieldset,
 article,
 aside,
@@ -281,9 +286,13 @@ h1 {
   text-transform: uppercase;
   font-family: 'Bebas Neue', cursive;
   font-weight: bold;
-  font-size: 110px;
+  font-size: 130px;
   color: #fef9ff;
   text-align: center;
+  letter-spacing: 1.3px;
+  width: 60%;
+  margin-bottom: 50px;
+  margin-top: 37px;
 }
 
 p {
@@ -468,6 +477,10 @@ a {
 
 .result a:hover {
   background: #C3DAB7;
-  color: black;
+  color: #303030;
   border: 1px solid #303030;
+}
+
+.result > h3:nth-child(1) {
+  margin-top: 13px;
 }

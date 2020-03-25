@@ -17,3 +17,8 @@ img {
     display: block;
     line-height: 0;
 }
+
+body {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+} 

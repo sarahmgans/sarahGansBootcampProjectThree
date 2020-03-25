@@ -109,8 +109,12 @@ a {
 
 .result a:hover {
     background: #C3DAB7;
-    color: black;
+    color: #303030;
     border: 1px solid #303030;
+}
+
+.result > h3:nth-child(1) {
+    margin-top: 13px;
 }
 
 
