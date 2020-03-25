@@ -4,7 +4,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border-top: 1px solid lightgrey;
+    border-top: 1px solid #65734e80;
     width: 100vw;
 }
 
@@ -44,13 +44,14 @@ input[type="radio"] {
     transition: 0.3s;
     font-weight: 300;
     letter-spacing: 1px;
-    border: 1px solid rgba(73, 71, 71, 0.3);
+    border: 1px solid #65734e;
     margin: 40px;
 }
 
 .cuteButton label:hover,
 a:hover {
     background-color: #ca5d65;
+    border: 1px solid transparent;
     color: #fef9ff;
 }
 
@@ -76,7 +77,7 @@ a:hover {
 
 .submit:hover,
 .reset:hover {
-    border-bottom: 1px solid #303030;;
+    border-bottom: 1px solid #65734e;
 }
 
 .top {
@@ -102,7 +103,7 @@ a {
     transition: 0.3s;
     font-weight: 300;
     letter-spacing: 1.3px;
-    border: 1px solid transparent;
+    border: 1px solid #65734e;
 }
 
 .result a:hover {
