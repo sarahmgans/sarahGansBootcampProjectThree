@@ -152,7 +152,7 @@ $('form').on('submit', function(e){
     if (allAnswered == false) {
         Swal.fire({
             title: 'Oh no!',
-            text: 'It looks like you forgot to answer all of the questions!',
+            text: 'Please go back and answer all of the questions!',
             imageUrl: './assets/Apple-Fruit-Transparent.png',
             imageWidth: 85,
             imageAlt: 'Custom image',
