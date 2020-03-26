@@ -59,23 +59,19 @@ a:hover {
 .reset {
     font-weight: 600;
     font-size: 24px;
-    border-bottom: 1px solid #303030;
-    letter-spacing: 1.5px;
+    letter-spacing: 1.3px;
     margin-bottom: 0px;
     color: #303030;
     padding-bottom: 5px;
     background-color: transparent;
     padding-left: 0;
     padding-right: 0;
-    border-top: 1px solid transparent;
     padding-top: 5px;
     margin-top: 50px;
     transition: 0.3s;
-    border-radius: 100%;
-    text-transform: none;
-    -webkit-appearance: none;
-    -webkit-border-radius: 0;
-    border-radius: 0;
+    text-transform: uppercase;
+    border: none;
+    border-bottom: 2px solid transparent;
 }   
 
 .reset {
@@ -84,9 +80,7 @@ a:hover {
 
 .submit:hover,
 .reset:hover {
-    border-top: 1px solid black;
-    color: black;
-    letter-spacing: 1px;
+    border-bottom: 2px solid #303030;
 }
 
 .top {

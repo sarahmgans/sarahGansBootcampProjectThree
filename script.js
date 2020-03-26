@@ -130,7 +130,7 @@ const scroll = function (scrollTo) {
 
 $('a').on('click', function(e){
     e.preventDefault();
-    scroll('.textBackground');
+    scroll('main');
     
 })
 

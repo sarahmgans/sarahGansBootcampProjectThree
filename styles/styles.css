@@ -440,8 +440,6 @@ a:hover {
 .reset {
   font-weight: 600;
   font-size: 24px;
-  border: none;
-  border-bottom: 1px solid #303030;
   letter-spacing: 1.3px;
   margin-bottom: 0px;
   color: #303030;
@@ -449,11 +447,13 @@ a:hover {
   background-color: transparent;
   padding-left: 0;
   padding-right: 0;
-  border-top: 1px solid transparent;
   padding-top: 5px;
   margin-top: 50px;
   -webkit-transition: 0.3s;
   transition: 0.3s;
+  text-transform: uppercase;
+  border: none;
+  border-bottom: 2px solid transparent;
 }
 
 .reset {
@@ -462,9 +462,7 @@ a:hover {
 
 .submit:hover,
 .reset:hover {
-  border-top: 1px solid black;
-  color: black;
-  letter-spacing: 1px;
+  border-bottom: 2px solid #303030;
 }
 
 .top {
