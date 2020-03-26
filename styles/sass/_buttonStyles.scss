@@ -44,7 +44,7 @@ input[type="radio"] {
     background-color: #f0f2ef;
     color: #303030;
     transition: 0.3s;
-    font-weight: 300;
+    font-weight: 400;
     letter-spacing: 1px;
     margin: 40px;
 }
@@ -57,16 +57,12 @@ a:hover {
 
 .submit,
 .reset {
-    font-weight: 600;
+    font-weight: 500;
     font-size: 24px;
     letter-spacing: 1.3px;
-    margin-bottom: 0px;
     color: #303030;
-    padding-bottom: 5px;
     background-color: transparent;
-    padding-left: 0;
-    padding-right: 0;
-    padding-top: 5px;
+    padding: 5px 0 2px 0;
     margin-top: 50px;
     transition: 0.3s;
     text-transform: uppercase;
@@ -77,6 +73,10 @@ a:hover {
     border-radius: 0px;
 }   
 
+.submit {
+    margin-bottom: 0px;
+}
+
 .reset {
     margin-bottom: 32px;
 }
@@ -84,18 +84,6 @@ a:hover {
 .submit:hover,
 .reset:hover {
     border-bottom: 2px solid #303030;
-}
-
-.top {
-    position: relative;
-}
-
-.top > a:nth-child(1) {
-    position: absolute;
-    bottom: 25px;
-    right: 545px;
-    font-size: 51px;
-    color: transparent;
 }
 
 a {
@@ -107,9 +95,8 @@ a {
     color: #303030;
     padding: 15px 20px;
     transition: 0.3s;
-    font-weight: 300;
+    font-weight: 400;
     letter-spacing: 1.3px;
-    // border: 1px solid transparent;
     border: 1px solid #ca5d65;
 }
 

@@ -236,7 +236,7 @@ html {
 }
 
 html {
-  font-size: 62.5%;
+  font-size: 100%;
 }
 
 img {
@@ -311,7 +311,7 @@ p {
   font-size: 24px;
   margin-left: 10px;
   margin-right: 10px;
-  font-weight: 300;
+  font-weight: 400;
   text-align: center;
   text-transform: uppercase;
   letter-spacing: 1.3px;
@@ -340,7 +340,7 @@ h3 {
 
 .result a {
   font-family: 'Montserrat';
-  font-weight: 300;
+  font-weight: 400;
   font-size: 24px;
   text-decoration: none;
   color: #f0f2ef;
@@ -367,6 +367,15 @@ h3 span.final {
 
 main {
   background-color: #afd5aa;
+}
+
+.swal2-content {
+  font-family: 'Montserrat';
+}
+
+.swal2-styled.swal2-confirm {
+  background-color: #ca5d65;
+  border-radius: 0;
 }
 
 .buttons {
@@ -425,7 +434,7 @@ input[type="radio"] {
   color: #303030;
   -webkit-transition: 0.3s;
   transition: 0.3s;
-  font-weight: 300;
+  font-weight: 400;
   letter-spacing: 1px;
   margin: 40px;
 }
@@ -438,16 +447,12 @@ a:hover {
 
 .submit,
 .reset {
-  font-weight: 600;
+  font-weight: 500;
   font-size: 24px;
   letter-spacing: 1.3px;
-  margin-bottom: 0px;
   color: #303030;
-  padding-bottom: 5px;
   background-color: transparent;
-  padding-left: 0;
-  padding-right: 0;
-  padding-top: 5px;
+  padding: 5px 0 2px 0;
   margin-top: 50px;
   -webkit-transition: 0.3s;
   transition: 0.3s;
@@ -458,6 +463,10 @@ a:hover {
   border-radius: 0px;
 }
 
+.submit {
+  margin-bottom: 0px;
+}
+
 .reset {
   margin-bottom: 32px;
 }
@@ -465,18 +474,6 @@ a:hover {
 .submit:hover,
 .reset:hover {
   border-bottom: 2px solid #303030;
-}
-
-.top {
-  position: relative;
-}
-
-.top > a:nth-child(1) {
-  position: absolute;
-  bottom: 25px;
-  right: 545px;
-  font-size: 51px;
-  color: transparent;
 }
 
 a {
@@ -489,7 +486,7 @@ a {
   padding: 15px 20px;
   -webkit-transition: 0.3s;
   transition: 0.3s;
-  font-weight: 300;
+  font-weight: 400;
   letter-spacing: 1.3px;
   border: 1px solid #ca5d65;
 }
@@ -537,7 +534,7 @@ a {
   .submit,
   .reset {
     font-size: 21px;
-    padding-bottom: 3px;
+    padding-bottom: 1px;
     padding-top: 3px;
   }
   .result > h3:nth-child(1) {

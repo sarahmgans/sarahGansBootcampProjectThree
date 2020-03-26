@@ -118,15 +118,17 @@ const appleProperties = {
 ]
 }
 
+// begin with a document ready, making sure that the user has checked every radio button on submit
 
-// 0) scroll function
+
+// scroll function
 const scroll = function (scrollTo) {
     $('html, body').animate({
         scrollTop: $(scrollTo).offset().top
     }, 800);
 }
 
-// 0) attach event listener onto the start link on the cover page
+// attach event listener onto the start link on the cover page
 
 $('a').on('click', function(e){
     e.preventDefault();
@@ -134,39 +136,40 @@ $('a').on('click', function(e){
     
 })
 
-// 1) attach event listener onto submit on form
+// attach event listener onto submit on form
 $('form').on('submit', function(e){
 
-    // 2) prevent default behaviour
-    e.preventDefault();
-
-    // 3) save the values from the inputs into variables
+    // prevent default behaviour
+    e.preventDefault();    
+    
+    // save the values from the inputs into variables
     const use = $('input[name="use"]:checked').val();
     const texture = $('input[name="texture"]:checked').val();
     const flavour = $('input[name="flavour"]:checked').val();
     const size = $('input[name="size"]:checked').val();
 
-    // 4) Declare a variable to be an empty that will be filled with eight objects, all eight of which will have the same use.
+    // declare a variable to be an empty that will be filled with eight objects, all eight of which will have the same use.
     const appleChoices = appleProperties[use];
 
-    // 5) Declare a variable to be an array that will be filled with the final object.
+    // declare a variable to be an array that will be filled with the final object.
     const finalChoice = [];
-    
-    // 6) Create a for loop that loops through and matches the property/value pairs with the saved values from the checked texture, flavour and size inputs. This will result in one array named the finalChoice array. 
-    for (var i = 0; i < appleChoices.length; i++) {
+
+    // create a for loop that loops through and matches the property/value pairs with the saved values from the checked texture, flavour and size inputs. This will result in one array named the finalChoice array. 
+
+    for (let i = 0; i < appleChoices.length; i++) {
         const store = appleChoices[i]
         if (store.texture === texture && store.flavour === flavour && store.size === size) {
             finalChoice.push(store);
         }
     }
 
-    // 7) Store the name of the object left in the finalChoice array in a variable called finalApple and the url each of the apples in a variable called appleInfo. 
+    // store the name of the object left in the finalChoice array in a variable called finalApple and the url each of the apples in a variable called appleInfo. 
     const finalApple = finalChoice[0].name
     const appleInfo = finalChoice[0].url
 
-    // 6) Display the html to a single location on the page. Modify one of the html's so that if the name of the apple is crab apple, the word apple at the end of the sentence is removed so that the word apple is not repeated. Modify another one of the html's so that if the name of the apple is empire, the word in front of Empire is replaced with the word an. 
-    var identifier = 'a';
-    var apple = ' apple'
+    // display the html to a single location on the page. Modify one of the html's so that if the name of the apple is crab apple, the word apple at the end of the sentence is removed so that the word apple is not repeated. Modify another one of the html's so that if the name of the apple is empire, the word in front of Empire is replaced with the word an. 
+    let identifier = 'a';
+    let apple = ' apple'
 
     if (finalApple === 'Empire') { 
         identifier = 'an';
@@ -177,14 +180,37 @@ $('form').on('submit', function(e){
     }
 
     $('.result').html(`<h3>You should try ${identifier}
-        <span class='final'>${finalApple}</span>${apple}!</h3> 
-        <a href='${appleInfo}'>Learn more about the ${finalApple}</a>`);
+    <span class='final'>${finalApple}</span>${apple}!</h3> 
+    <a href='${appleInfo}'>Learn more about the ${finalApple}</a>`);
 
-    // 7) on submit button scroll to the result
+    // on submit button scroll to the result
     scroll('.result');
 });
 
-// 8) On reset, clear the html that was posted to the .results section of the page, empty the radio buttons and scroll to the top of the page.  
+// make sure that if the user does not select all of the radio buttons, they are not able to submit the form
+$(document).ready(function () {
+    $("#submit").click(function (e) {
+        e.preventDefault();
+        var all_answered = true;
+        $("input:radio").each(function () {
+            var name = $(this).attr("name");
+            if ($("input:radio[name=" + name + "]:checked").length == 0) {
+                all_answered = false;
+            }
+        });
+        if (all_answered == false) {
+            Swal.fire({
+                title: 'Oh no!',
+                text: 'Please answer all of the questions so that we can find you your perfect apple!',
+                imageUrl: './assets/Apple-Fruit-Transparent.png',
+                imageWidth: 100,
+                imageAlt: 'Custom image',
+            })
+        }
+    })
+})
+
+// on reset, clear the html that was posted to the .results section of the page, empty the radio buttons and scroll to the top of the page.  
 $('.reset').click(function () {
     $('.result').empty();
     scroll('.textBackground');

@@ -39,7 +39,7 @@ p {
     font-size: 24px;
     margin-left: 10px;
     margin-right: 10px;
-    font-weight: 300;
+    font-weight: 400;
     text-align: center;
     text-transform: uppercase;
     letter-spacing: 1.3px;
@@ -68,7 +68,7 @@ h3 {
 
 .result a {
     font-family: 'Montserrat';
-    font-weight: 300;
+    font-weight: 400;
     font-size: 24px;
     text-decoration: none;
     color: #f0f2ef;
@@ -94,6 +94,15 @@ h3 span.final {
 
 main {
     background-color: #afd5aa;
+}
+
+.swal2-content {
+    font-family: 'Montserrat';
+}
+
+.swal2-styled.swal2-confirm {
+    background-color: #ca5d65;
+    border-radius: 0;
 }
 
 

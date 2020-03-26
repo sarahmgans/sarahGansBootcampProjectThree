@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="./styles/styles.css">
     <link href="https://fonts.googleapis.com/css?family=Bebas+Neue|Montserrat&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:500&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Old+Standard+TT&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/b92fc38b7b.js" crossorigin="anonymous"></script>
 </head>
@@ -24,7 +25,7 @@
                     <fieldset>
                         <h2>How will you be using your apple?</h2>
                         <div class="cuteButton">
-                            <input type="radio" name="use" value="cooking" id="cooking" required autocomplete="off">
+                            <input type="radio" name="use" value="cooking" id="cooking" autocomplete="off">
                             <label for="cooking">Cooking</label>
                             
                             <input type="radio" name="use" value="snack" id="snack" autocomplete="off">
@@ -34,7 +35,7 @@
                     <fieldset>
                         <h2>What is your apple-texture of choice?</h2>
                         <div class="cuteButton">
-                            <input type="radio" name="texture" value="crisp" id="crisp" required autocomplete="off">
+                            <input type="radio" name="texture" value="crisp" id="crisp" autocomplete="off">
                             <label for="crisp">Crisp</label>
                             
                             <input type="radio" name="texture" value="soft" id="soft" autocomplete="off">
@@ -44,7 +45,7 @@
                     <fieldset>
                         <h2>What flavour profile would you like your apple to have?</h2>
                         <div class="cuteButton">
-                            <input type="radio" name="flavour" value="sweet" id="sweet" required autocomplete="off">
+                            <input type="radio" name="flavour" value="sweet" id="sweet" autocomplete="off">
                             <label for="sweet">Sweet</label>
                         
                             <input type="radio" name="flavour" value="tart" id="tart" autocomplete="off">
@@ -54,7 +55,7 @@
                     <fieldset>
                         <h2>What size would you like your apple to be?</h2>
                         <div class="cuteButton">
-                            <input type="radio" name="size" value="big" id="big" required autocomplete="off">
+                            <input type="radio" name="size" value="big" id="big" autocomplete="off">
                             <label for="big">Big</label>
                     
                             <input type="radio" name="size" value="little" id="little" autocomplete="off">
@@ -63,7 +64,7 @@
                     </fieldset>
                         <div class="buttons">
                             <div>
-                                <input class="submit" type="submit" value="Reveal my Apple"/>
+                                <input class="submit" type="submit" value="Reveal my Apple" id="submit"/>
                             </div>
                             <div>
                                 <input class="reset" type="reset" value="Reset">
@@ -76,6 +77,7 @@
         </div>
     </main>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
 <script src="script.js"></script>
 </body>
 </html>
