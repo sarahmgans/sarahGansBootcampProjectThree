@@ -119,7 +119,7 @@ const appleProperties = {
 }
 
 // begin with a document ready, making sure that the user has checked every radio button on submit
-
+$(document).ready(function () {
 
 // scroll function
 const scroll = function (scrollTo) {
@@ -188,17 +188,20 @@ $('form').on('submit', function(e){
 });
 
 // make sure that if the user does not select all of the radio buttons, they are not able to submit the form
-$(document).ready(function () {
-    $("#submit").click(function (e) {
+    $("#submit").click(function(e) {
         e.preventDefault();
-        var all_answered = true;
+        // variable called allAnswered, start off as true
+        let allAnswered = true;
+        
+        // all radio button inputs, run the following code:
         $("input:radio").each(function () {
-            var name = $(this).attr("name");
+            let name = $(this).attr("name");
+            console.log($("input:radio[name=" + name + "]:checked"))
             if ($("input:radio[name=" + name + "]:checked").length == 0) {
-                all_answered = false;
+                allAnswered = false;
             }
         });
-        if (all_answered == false) {
+        if (allAnswered == false) {
             Swal.fire({
                 title: 'Oh no!',
                 text: 'Please answer all of the questions so that we can find you your perfect apple!',
@@ -208,10 +211,11 @@ $(document).ready(function () {
             })
         }
     })
-})
 
 // on reset, clear the html that was posted to the .results section of the page, empty the radio buttons and scroll to the top of the page.  
 $('.reset').click(function () {
     $('.result').empty();
     scroll('.textBackground');
 });
+
+})

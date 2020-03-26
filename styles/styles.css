@@ -587,3 +587,9 @@ a {
     padding-top: 3px;
   }
 }
+
+@media (max-width: 345px) {
+  .cuteButton label {
+    margin: 5px;
+  }
+}
