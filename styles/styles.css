@@ -454,6 +454,8 @@ a:hover {
   text-transform: uppercase;
   border: none;
   border-bottom: 2px solid transparent;
+  -webkit-appearance: none;
+  border-radius: 0px;
 }
 
 .reset {
