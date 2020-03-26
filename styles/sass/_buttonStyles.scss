@@ -59,7 +59,6 @@ a:hover {
 .reset {
     font-weight: 600;
     font-size: 24px;
-    border: none;
     border-bottom: 1px solid #303030;
     letter-spacing: 1.5px;
     margin-bottom: 0px;
@@ -75,6 +74,7 @@ a:hover {
     border-radius: 100%;
     text-transform: none;
     -webkit-appearance: none;
+    -webkit-border-radius: 0;
     border-radius: 0;
 }   
 
