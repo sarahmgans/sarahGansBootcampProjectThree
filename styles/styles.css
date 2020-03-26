@@ -370,7 +370,7 @@ main {
 }
 
 .buttons {
-  padding-bottom: 35px;
+  padding-bottom: 30px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -411,6 +411,7 @@ input[type="radio"] {
 
 .cuteButton label {
   padding: 15px 20px;
+  border: 1px solid #ca5d65;
 }
 
 .cuteButton label,
@@ -427,7 +428,6 @@ input[type="radio"] {
   font-weight: 300;
   letter-spacing: 1px;
   margin: 40px;
-  border: 1px solid #ca5d65;
 }
 
 .cuteButton label:hover,
@@ -438,10 +438,10 @@ a:hover {
 
 .submit,
 .reset {
-  font-weight: 300;
+  font-weight: 600;
   font-size: 24px;
   border: none;
-  border-bottom: 1px solid transparent;
+  border-bottom: 1px solid #303030;
   letter-spacing: 1.3px;
   margin-bottom: 0px;
   color: #303030;
@@ -449,20 +449,22 @@ a:hover {
   background-color: transparent;
   padding-left: 0;
   padding-right: 0;
+  border-top: 1px solid transparent;
+  padding-top: 5px;
+  margin-top: 50px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 .reset {
-  margin-bottom: 22px;
-  padding-bottom: 5px;
-}
-
-.submit {
-  padding-top: 25px;
+  margin-bottom: 32px;
 }
 
 .submit:hover,
 .reset:hover {
-  border-bottom: 1px solid #303030;
+  border-top: 1px solid black;
+  color: black;
+  letter-spacing: 1px;
 }
 
 .top {
@@ -514,6 +516,7 @@ a {
   }
   p {
     font-size: 20px;
+    line-height: 28px;
   }
   h2 {
     font-size: 22px;
@@ -535,6 +538,7 @@ a {
   .reset {
     font-size: 21px;
     padding-bottom: 3px;
+    padding-top: 3px;
   }
   .result > h3:nth-child(1) {
     margin-top: 0px;
@@ -550,6 +554,7 @@ a {
   }
   p {
     font-size: 16px;
+    line-height: 24px;
   }
   h2 {
     font-size: 18px;
@@ -562,6 +567,7 @@ a {
   .submit,
   .reset {
     font-size: 19px;
+    margin-top: 40px;
   }
   h3 {
     font-size: 22px;
@@ -577,9 +583,10 @@ a {
     padding-bottom: 25px;
   }
   .submit {
-    padding-top: 15px;
+    padding-top: 3px;
   }
   .reset {
     margin-bottom: 26px;
+    padding-top: 3px;
   }
 }
