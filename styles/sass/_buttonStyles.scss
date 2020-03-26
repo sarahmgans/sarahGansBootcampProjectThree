@@ -72,6 +72,11 @@ a:hover {
     padding-top: 5px;
     margin-top: 50px;
     transition: 0.3s;
+    border-radius: 100%;
+    text-transform: none;
+    -webkit-appearance: none;
+    border-radius: 0;
+    appearance: none;
 }   
 
 .reset {
