@@ -10,7 +10,7 @@
 hr {
     border: 0;
     height: 0;
-    border-top: 1px solid #f0f2ef;
+    border-top: 1px solid $lightFontColor;
     width: 100%;
 }
 
@@ -20,8 +20,8 @@ hr {
 
 .cuteButton input[type="radio"]:focus+label,
 .cuteButton input[type="radio"]:checked+label {
-    background-color: #ca5d65;
-    color:#f0f2ef;
+    background-color: $darkBackgroundColor;
+    color: $lightFontColor;
 }
 
 .cuteButton {
@@ -37,18 +37,16 @@ input[type="radio"] {
 
 .cuteButton label {   
     padding: 15px 20px;
-    border: 1px solid #ca5d65;
+    border: 1px solid $darkBackgroundColor;
 } 
 
-.cuteButton label,
-.submit,
-.reset {
-    font-family: Montserrat;
+.cuteButton label {
+    font-family: $mediumFont;
     font-size: 22px;
     text-transform: uppercase;
     text-decoration: none;
-    background-color: #f0f2ef;
-    color: #303030;
+    background-color: $lightFontColor;
+    color: $darkFontColor;
     transition: 0.3s;
     font-weight: 400;
     letter-spacing: 1px;
@@ -59,16 +57,17 @@ input[type="radio"] {
 a:hover,
 .cuteButton label:focus,
 a:focus {
-    background-color: #ca5d65;
-    color: #f0f2ef;
+    background-color: $darkBackgroundColor; 
+    color: $lightFontColor;
 }
 
 .submit,
 .reset {
+    font-family: $mediumFont;
     font-weight: 500;
     font-size: 24px;
     letter-spacing: 1.3px;
-    color: #303030;
+    color: $darkFontColor;
     background-color: transparent;
     padding: 5px 0 2px 0;
     margin-top: 50px;
@@ -93,27 +92,27 @@ a:focus {
 .reset:hover,
 .submit:focus,
 .reset:focus {
-    border-bottom: 2px solid #303030;
+    border-bottom: 2px solid $darkFontColor;
 }
 
 a {
-    font-family: Montserrat;
+    font-family: $mediumFont;
     font-size: 22px;
     text-transform: uppercase;
     text-decoration: none;
-    background: #f0f2ef;
-    color: #303030;
+    background: $lightFontColor;
+    color: $darkFontColor;
     padding: 15px 20px;
     transition: 0.3s;
     font-weight: 400;
     letter-spacing: 1.3px;
-    border: 1px solid #ca5d65;
+    border: 1px solid $darkBackgroundColor;
 }
 
 .result a:hover,
 .result a:focus {
     background: #678e55;
-    color: #f0f2ef;
+    color: $lightFontColor;
 }
 
 .result > h3:nth-child(1) {

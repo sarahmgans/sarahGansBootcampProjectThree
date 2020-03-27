@@ -294,8 +294,8 @@ header {
 }
 
 h1 {
+  font-family: "Bebas Neue", cursive;
   text-transform: uppercase;
-  font-family: 'Bebas Neue', cursive;
   font-weight: bold;
   font-size: 130px;
   color: #f0f2ef;
@@ -307,23 +307,19 @@ h1 {
 }
 
 p {
-  font-family: Montserrat;
+  font-family: "Montserrat", sans-serif;
   font-size: 24px;
-  margin-left: 10px;
-  margin-right: 10px;
   font-weight: 400;
   text-align: center;
   text-transform: uppercase;
   letter-spacing: 1.3px;
-  padding-top: 35px;
-  margin-top: 0px;
+  margin-top: 0px 10px 5px 10px;
   color: #303030;
-  margin-bottom: 5px;
 }
 
 h2,
 h3 {
-  font-family: 'Old Standard TT', serif;
+  font-family: "Old Standard TT", serif;
   letter-spacing: 1px;
   font-weight: 400;
   font-size: 25px;
@@ -339,7 +335,7 @@ h3 {
 }
 
 .result a {
-  font-family: 'Montserrat';
+  font-family: "Montserrat", sans-serif;
   font-weight: 400;
   font-size: 24px;
   text-decoration: none;
@@ -374,7 +370,7 @@ main {
 }
 
 .swal2-content {
-  font-family: 'Montserrat';
+  font-family: "Montserrat", sans-serif;
   text-transform: uppercase !important;
   font-size: 16px !important;
   line-height: 23px !important;
@@ -389,7 +385,7 @@ main {
 }
 
 .swal2-title {
-  font-family: 'Bebas Neue', cursive !important;
+  font-family: "Bebas Neue", cursive !important;
   text-transform: uppercase !important;
   font-size: 28px !important;
 }
@@ -452,10 +448,8 @@ input[type="radio"] {
   border: 1px solid #ca5d65;
 }
 
-.cuteButton label,
-.submit,
-.reset {
-  font-family: Montserrat;
+.cuteButton label {
+  font-family: "Montserrat", sans-serif;
   font-size: 22px;
   text-transform: uppercase;
   text-decoration: none;
@@ -478,6 +472,7 @@ a:focus {
 
 .submit,
 .reset {
+  font-family: "Montserrat", sans-serif;
   font-weight: 500;
   font-size: 24px;
   letter-spacing: 1.3px;
@@ -510,7 +505,7 @@ a:focus {
 }
 
 a {
-  font-family: Montserrat;
+  font-family: "Montserrat", sans-serif;
   font-size: 22px;
   text-transform: uppercase;
   text-decoration: none;

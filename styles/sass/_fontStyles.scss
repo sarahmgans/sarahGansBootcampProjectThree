@@ -1,5 +1,3 @@
-
-
 header {
     height: 100vh;
     background-image: url(../assets/gabriela-tamara-cycman-wDf1Qmd9UUs-unsplash.jpg);
@@ -10,11 +8,11 @@ header {
 }
 
 h1 {
+    font-family: $largeFont;
     text-transform: uppercase; 
-    font-family: 'Bebas Neue', cursive;
     font-weight: bold;
     font-size: 130px;
-    color: #f0f2ef;
+    color: $lightFontColor;
     text-align: center;
     letter-spacing: 1.3px;
     width: 60%;
@@ -23,28 +21,24 @@ h1 {
 }
 
 p {
-    font-family: Montserrat;
+    font-family: $mediumFont;
     font-size: 24px;
-    margin-left: 10px;
-    margin-right: 10px;
     font-weight: 400;
     text-align: center;
     text-transform: uppercase;
     letter-spacing: 1.3px;
-    padding-top: 35px;
-    margin-top: 0px;
-    color: #303030;
-    margin-bottom: 5px;
+    margin-top: 0px 10px 5px 10px;
+    color: $darkFontColor;
 }
 
 h2,
 h3 {
-    font-family: 'Old Standard TT', serif;
+    font-family: $smallFont;
     letter-spacing: 1px;
     font-weight: 400;
     font-size: 25px;
     margin: 30px 0px;
-    color: #303030;
+    color: $darkFontColor;
     text-align: center;
     line-height: 1.15;
     padding: 10px;
@@ -55,11 +49,11 @@ h3 {
 }
 
 .result a {
-    font-family: 'Montserrat';
+    font-family: $mediumFont;
     font-weight: 400;
     font-size: 24px;
     text-decoration: none;
-    color: #f0f2ef;
+    color: $lightFontColor;
     background-color: #7fb069;
     padding: 15px;
     margin-bottom: 45px;
@@ -68,7 +62,7 @@ h3 {
 }
 
 h3 {
-    color: #303030;
+    color: $darkFontColor;
     font-size: 30px;
     line-height: 45px;
     text-transform: none;
@@ -77,11 +71,11 @@ h3 {
 h3 span.final {
     font-size: 35px;
     font-weight: bold;
-    color: #ca5d65;
+    color: $darkBackgroundColor;
 }
 
 main {
-    background-color: #afd5aa;
+    background-color: $lightBackgroundColor;
 }
 
 .swal2-styled {
@@ -89,7 +83,7 @@ main {
 }
 
 .swal2-content {
-    font-family: 'Montserrat';
+    font-family: $mediumFont;
     text-transform: uppercase !important;
     font-size: 16px !important;
     line-height: 23px !important;
@@ -97,23 +91,23 @@ main {
 }
 
 .swal2-styled.swal2-confirm {
-border: 0 !important;
-border-radius: 0 !important;
-background-color: #678e55 !important;
-color: #f0f2ef !important;
+    border: 0 !important;
+    border-radius: 0 !important;
+    background-color: #678e55 !important;
+    color: $lightFontColor !important;
 }
 
 .swal2-title {
-    font-family: 'Bebas Neue', cursive !important;
+    font-family: $largeFont !important;
     text-transform: uppercase !important;
     font-size: 28px !important;
 }
 
 .swal2-popup {
-    background-color: #f0f2ef !important;
+    background-color: $lightFontColor !important;
     width: 29rem !important;
     border-radius: 0 !important;
-    border: 1px solid #ca5d65 !important;
+    border: 1px solid $darkBackgroundColor !important;
 }
     
 

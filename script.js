@@ -209,5 +209,4 @@ $('.reset').click(function () {
     $('.result').empty();
     scroll('.textBackground');
 });
-
 })
