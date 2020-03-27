@@ -313,8 +313,14 @@ p {
   text-align: center;
   text-transform: uppercase;
   letter-spacing: 1.3px;
-  margin-top: 0px 10px 5px 10px;
+  padding-top: 35px;
+  margin: 0px 10px 5px 10px;
   color: #303030;
+}
+
+h2 {
+  font-size: 25px;
+  line-height: 1.15;
 }
 
 h2,
@@ -322,12 +328,22 @@ h3 {
   font-family: "Old Standard TT", serif;
   letter-spacing: 1px;
   font-weight: 400;
-  font-size: 25px;
   margin: 30px 0px;
   color: #303030;
   text-align: center;
-  line-height: 1.15;
   padding: 10px;
+}
+
+h3 {
+  font-size: 30px;
+  line-height: 45px;
+  text-transform: none;
+}
+
+h3 span.final {
+  font-size: 35px;
+  font-weight: bold;
+  color: #c9464f;
 }
 
 .myForm > fieldset:nth-child(1) > h2:nth-child(1) {
@@ -346,19 +362,6 @@ h3 {
   border: 1px solid #678e55;
   -webkit-transition: 0.3s;
   transition: 0.3s;
-}
-
-h3 {
-  color: #303030;
-  font-size: 30px;
-  line-height: 45px;
-  text-transform: none;
-}
-
-h3 span.final {
-  font-size: 35px;
-  font-weight: bold;
-  color: #ca5d65;
 }
 
 main {
@@ -444,11 +447,12 @@ input[type="radio"] {
 }
 
 .cuteButton label {
-  padding: 15px 20px;
-  border: 1px solid #ca5d65;
+  letter-spacing: 1px;
+  margin: 40px;
 }
 
-.cuteButton label {
+.cuteButton label,
+a {
   font-family: "Montserrat", sans-serif;
   font-size: 22px;
   text-transform: uppercase;
@@ -458,8 +462,12 @@ input[type="radio"] {
   -webkit-transition: 0.3s;
   transition: 0.3s;
   font-weight: 400;
-  letter-spacing: 1px;
-  margin: 40px;
+  padding: 15px 20px;
+  border: 1px solid #ca5d65;
+}
+
+a {
+  letter-spacing: 1.3px;
 }
 
 .cuteButton label:hover,
@@ -502,21 +510,6 @@ a:focus {
 .submit:focus,
 .reset:focus {
   border-bottom: 2px solid #303030;
-}
-
-a {
-  font-family: "Montserrat", sans-serif;
-  font-size: 22px;
-  text-transform: uppercase;
-  text-decoration: none;
-  background: #f0f2ef;
-  color: #303030;
-  padding: 15px 20px;
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
-  font-weight: 400;
-  letter-spacing: 1.3px;
-  border: 1px solid #ca5d65;
 }
 
 .result a:hover,
