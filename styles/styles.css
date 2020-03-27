@@ -430,6 +430,7 @@ hr {
   padding-bottom: 55px;
 }
 
+.cuteButton input[type="radio"]:focus + label,
 .cuteButton input[type="radio"]:checked + label {
   background-color: #ca5d65;
   color: #f0f2ef;
@@ -444,7 +445,6 @@ input[type="radio"] {
   opacity: 0.01;
   position: absolute;
   left: -1000px;
-  display: none;
 }
 
 .cuteButton label {
@@ -469,7 +469,9 @@ input[type="radio"] {
 }
 
 .cuteButton label:hover,
-a:hover {
+a:hover,
+.cuteButton label:focus,
+a:focus {
   background-color: #ca5d65;
   color: #f0f2ef;
 }
@@ -501,7 +503,9 @@ a:hover {
 }
 
 .submit:hover,
-.reset:hover {
+.reset:hover,
+.submit:focus,
+.reset:focus {
   border-bottom: 2px solid #303030;
 }
 
@@ -520,7 +524,8 @@ a {
   border: 1px solid #ca5d65;
 }
 
-.result a:hover {
+.result a:hover,
+.result a:focus {
   background: #678e55;
   color: #f0f2ef;
 }

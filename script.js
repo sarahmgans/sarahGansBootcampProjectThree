@@ -139,10 +139,10 @@ $('a').on('click', function(e){
 $('form').on('submit', function(e){
     e.preventDefault();
     
-    // variable called allAnswered, start off as true
+    // declare a variable called allAnswered and start it off as true
     let allAnswered = true;
 
-    // all radio button inputs, run the following code:
+    // for all of the radio button inputs, run the following code:
     $("input:radio").each(function () {
         let name = $(this).attr("name");
         if ($("input:radio[name=" + name + "]:checked").length == 0) {
@@ -155,7 +155,7 @@ $('form').on('submit', function(e){
             text: 'Please go back and answer all of the questions!',
             imageUrl: './assets/Apple-Fruit-Transparent.png',
             imageWidth: 85,
-            imageAlt: 'Custom image',
+            imageAlt: 'Apple',
         })
     } 
     
@@ -165,7 +165,7 @@ $('form').on('submit', function(e){
     const flavour = $('input[name="flavour"]:checked').val();
     const size = $('input[name="size"]:checked').val();
 
-    // declare a variable to be an empty that will be filled with eight objects, all eight of which will have the same use.
+    // declare a variable to be an array that will be filled with eight objects, all eight of which will have the same use.
     const appleChoices = appleProperties[use];
 
     // declare a variable to be an array that will be filled with the final object.
@@ -203,11 +203,6 @@ $('form').on('submit', function(e){
     // on submit button scroll to the result
     scroll('.result');
 });
-
-// make sure that if the user does not select all of the radio buttons, they are not able to submit the form
-    // $("#submit").click(function(e) {
-        
-    // })
 
 // on reset, clear the html that was posted to the .results section of the page, empty the radio buttons and scroll to the top of the page.  
 $('.reset').click(function () {
