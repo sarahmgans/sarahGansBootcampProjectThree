@@ -38,6 +38,8 @@ input[type="radio"] {
 .cuteButton label {
     letter-spacing: 1px;
     margin: 40px;
+    background-color: $lightFontColor;
+    color: $darkFontColor;
 }
 
 .cuteButton label,
@@ -50,21 +52,26 @@ a {
     color: $darkFontColor;
     transition: 0.3s;
     font-weight: 400;
-    
     padding: 15px 20px;
     border: 1px solid $darkBackgroundColor;
 }
 
 a {
     letter-spacing: 1.3px;
+    background-color: $darkBackgroundColor;
+    color: $lightFontColor;
 }
 
 .cuteButton label:hover,
-a:hover,
-.cuteButton label:focus,
-a:focus {
+.cuteButton label:focus {
     background-color: $darkBackgroundColor; 
     color: $lightFontColor;
+}
+
+a:hover,
+a:focus {
+    background-color: $lightFontColor;
+    color: $darkFontColor;
 }
 
 .submit,

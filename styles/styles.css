@@ -449,6 +449,8 @@ input[type="radio"] {
 .cuteButton label {
   letter-spacing: 1px;
   margin: 40px;
+  background-color: #f0f2ef;
+  color: #303030;
 }
 
 .cuteButton label,
@@ -468,14 +470,20 @@ a {
 
 a {
   letter-spacing: 1.3px;
+  background-color: #ca5d65;
+  color: #f0f2ef;
 }
 
 .cuteButton label:hover,
-a:hover,
-.cuteButton label:focus,
-a:focus {
+.cuteButton label:focus {
   background-color: #ca5d65;
   color: #f0f2ef;
+}
+
+a:hover,
+a:focus {
+  background-color: #f0f2ef;
+  color: #303030;
 }
 
 .submit,
