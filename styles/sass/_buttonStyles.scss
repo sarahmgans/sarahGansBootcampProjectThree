@@ -18,6 +18,10 @@ hr {
     padding-bottom: 55px;
 }
 
+.myForm > fieldset:nth-child(1) > h2:nth-child(1) {
+    margin-top: 0;
+}
+
 .cuteButton input[type="radio"]:focus+label,
 .cuteButton input[type="radio"]:checked+label {
     background-color: $darkBackgroundColor;
@@ -40,6 +44,7 @@ input[type="radio"] {
     margin: 40px;
     background-color: $lightFontColor;
     color: $darkFontColor;
+    border: 1px solid $darkBackgroundColor;
 }
 
 .cuteButton label,
@@ -53,7 +58,6 @@ a {
     transition: 0.3s;
     font-weight: 400;
     padding: 15px 20px;
-    border: 1px solid $darkBackgroundColor;
 }
 
 a {
@@ -70,8 +74,8 @@ a {
 
 a:hover,
 a:focus {
-    background-color: $lightFontColor;
-    color: $darkFontColor;
+    background-color: #c9464f;
+    color: $lightFontColor;
 }
 
 .submit,

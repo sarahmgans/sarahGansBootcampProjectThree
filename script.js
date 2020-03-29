@@ -118,7 +118,7 @@ const appleProperties = {
 ]
 }
 
-// begin with a document ready, making sure that the user has checked every radio button on submit
+// begin with a document ready
 $(document).ready(function () {
 
 // scroll function
@@ -128,8 +128,7 @@ const scroll = function (scrollTo) {
     }, 800);
 }
 
-// attach event listener onto the start link on the cover page
-
+// attach event listener onto the start link on the cover page and have the page scroll to the main section when the start link is clicked
 $('a').on('click', function(e){
     e.preventDefault();
     scroll('main');
@@ -172,7 +171,6 @@ $('form').on('submit', function(e){
     const finalChoice = [];
 
     // create a for loop that loops through and matches the property/value pairs with the saved values from the checked texture, flavour and size inputs. This will result in one array named the finalChoice array. 
-
     for (let i = 0; i < appleChoices.length; i++) {
         const store = appleChoices[i]
         if (store.texture === texture && store.flavour === flavour && store.size === size) {
@@ -180,33 +178,22 @@ $('form').on('submit', function(e){
         }
     }
 
-    // store the name of the object left in the finalChoice array in a variable called finalApple and the url each of the apples in a variable called appleInfo. 
+    // store the name of the object left in the finalChoice array in a variable called finalApple and the url of each of the apples in a variable called appleInfo. 
     const finalApple = finalChoice[0].name
     const appleInfo = finalChoice[0].url
 
-    // display the html to a single location on the page. Modify one of the html's so that if the name of the apple is crab apple, the word apple at the end of the sentence is removed so that the word apple is not repeated. Modify another one of the html's so that if the name of the apple is empire, the word in front of Empire is replaced with the word an. 
-    let identifier = 'a';
-    let apple = ' apple'
-
-    if (finalApple === 'Empire') { 
-        identifier = 'an';
-    } 
-
-    if (finalApple === "Crab Apple") {
-        apple ='';
-    }
-
-    $('.result').html(`<h3>You should try ${identifier}
-    <span class='final'>${finalApple}</span>${apple}!</h3> 
-    <a href='${appleInfo}'>Learn more about the ${finalApple}</a>`);
-
     // on submit button scroll to the result
     scroll('.result');
+
+    // display the result html to a single location on the page. Use a ternary operator so that if the name of the apple is crab apple, the word apple at the end of the sentence is removed and not repeated. Use another ternary operator so that if the name of the apple is empire, the word in front of Empire is replaced with the word an. 
+    $('.result').html(`<h3>You should try a${finalApple === 'Empire' ? 'n' : ''}
+    <span class='final'>${finalApple}</span>${finalApple === 'Crab Apple' ? '' : ' apple'}!</h3> 
+    <a href='${appleInfo}'>Learn more about the ${finalApple}</a>`);
 });
 
-// on reset, clear the html that was posted to the .results section of the page, empty the radio buttons and scroll to the top of the page.  
+// on reset, clear the html that was posted to the .results section of the page, empty the radio buttons and scroll to the top of main.  
 $('.reset').click(function () {
     $('.result').empty();
-    scroll('.textBackground');
+    scroll('main');
 });
 })
