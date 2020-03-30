@@ -138,10 +138,12 @@ $('a').on('click', function(e){
 $('form').on('submit', function(e){
     e.preventDefault();
     
-    // declare a variable called allAnswered and start it off as true
+    // first, if the user tries to submit the form without checking one of the options for each of the questions, have an alert that tells the user to go back and answer all of the questions.
+    
+    //begin this by first declaring a variable called allAnswered that starts off as true
     let allAnswered = true;
 
-    // for all of the radio button inputs, run the following code:
+    // for all of the radio button inputs, run the following code that will result in an alert if the user does not answer all of the questions before submitting the form. 
     $("input:radio").each(function () {
         let name = $(this).attr("name");
         if ($("input:radio[name=" + name + "]:checked").length == 0) {
@@ -158,7 +160,7 @@ $('form').on('submit', function(e){
         })
     } 
     
-    // save the values from the inputs into variables
+    // save the values from each of the inputs into variables
     const use = $('input[name="use"]:checked').val();
     const texture = $('input[name="texture"]:checked').val();
     const flavour = $('input[name="flavour"]:checked').val();
