@@ -1,3 +1,5 @@
+// Create an object called appleProperties that holds two arrays, one of which will hold the eight apple objects with the use of ‘cooking’, and the other of which will hold the eight apple objects with the use of ‘snacking’.
+
 const appleProperties = {
     cooking: [
     {
@@ -118,32 +120,32 @@ const appleProperties = {
 ]
 }
 
-// begin with a document ready
+// Begin with a document ready that will hold the remainder of the code. 
 $(document).ready(function () {
 
-// scroll function
+// Introduce the scroll function that will be used to scroll from the landing page to the beginning of the form, from the submit button to the results, and from the reset button back to the beginning of the form. 
 const scroll = function (scrollTo) {
     $('html, body').animate({
         scrollTop: $(scrollTo).offset().top
     }, 800);
 }
 
-// attach event listener onto the start link on the cover page and have the page scroll to the main section when the start link is clicked
+// Attach an event listener onto the start link on the landing page, and on click, have the page scroll to the beginning of the form using the scroll function from above.
 $('a').on('click', function(e){
     e.preventDefault();
     scroll('main');
 })
 
-// attach event listener onto submit on form
+// Attach an event listener onto the submit input on the form.
 $('form').on('submit', function(e){
     e.preventDefault();
     
-    // first, if the user tries to submit the form without checking one of the options for each of the questions, have an alert that tells the user to go back and answer all of the questions.
+    // If the user tries to submit the form without checking one of the options for each of the questions, have an alert that tells the user to go back and answer all of the questions. 
     
-    //begin this by first declaring a variable called allAnswered that starts off as true
+    // To do this, begin by declaring a variable called allAnswered that starts off as true. 
     let allAnswered = true;
 
-    // for all of the radio button inputs, run the following code that will result in an alert if the user does not answer all of the questions before submitting the form. 
+    // If a question does not have any checked radio buttons, the allAnswered variable is changed to false. If any of the questions have the allAnswered variable changed to false, alert the user to go back and complete all of the questions. 
     $("input:radio").each(function () {
         let name = $(this).attr("name");
         if ($("input:radio[name=" + name + "]:checked").length == 0) {
@@ -160,19 +162,19 @@ $('form').on('submit', function(e){
         })
     } 
     
-    // save the values from each of the inputs into variables
+    // Save the checked values from each of the inputs into variables.
     const use = $('input[name="use"]:checked').val();
     const texture = $('input[name="texture"]:checked').val();
     const flavour = $('input[name="flavour"]:checked').val();
     const size = $('input[name="size"]:checked').val();
 
-    // declare a variable to be an array that will be filled with eight objects, all eight of which will have the same use.
+    // Declare a variable to be an array called appleChoices. This will be filled with eight apple objects, all of which will have the same use.
     const appleChoices = appleProperties[use];
 
-    // declare a variable to be an array that will be filled with the final object.
+    // Declare a variable to be an array called finalChoice. This will be filled with the final apple object. 
     const finalChoice = [];
 
-    // create a for loop that loops through and matches the property/value pairs with the saved values from the checked texture, flavour and size inputs. This will result in one array named the finalChoice array. 
+    // Create a for loop that loops through the appleChoices array and matches the property/value pairs of an apple object with the users checked values of the texture, flavour and size inputs to produce one final object. This final object will be stored in the finalChoice array. 
     for (let i = 0; i < appleChoices.length; i++) {
         const store = appleChoices[i]
         if (store.texture === texture && store.flavour === flavour && store.size === size) {
@@ -180,11 +182,11 @@ $('form').on('submit', function(e){
         }
     }
 
-    // store the name of the object left in the finalChoice array in a variable called finalApple and the url of each of the apples in a variable called appleInfo. 
+    // Store the name of this final object in the finalChoice array in a variable called finalApple. Save the url property/value pair of each of the apples in a variable called appleInfo. 
     const finalApple = finalChoice[0].name
     const appleInfo = finalChoice[0].url
 
-    // on submit button scroll to the result
+    // On submit, scroll to the result. 
     scroll('.result');
 
     // display the result html to a single location on the page. Use a ternary operator so that if the name of the apple is crab apple, the word apple at the end of the sentence is removed and not repeated. Use another ternary operator so that if the name of the apple is empire, the word in front of Empire is replaced with the word an. 
@@ -193,7 +195,7 @@ $('form').on('submit', function(e){
     <a href='${appleInfo}'>Learn more about the ${finalApple}</a>`);
 });
 
-// on reset, clear the html that was posted to the .results section of the page, empty the radio buttons and scroll to the top of main.  
+// Attach an event listener to the reset input on the form, so that on click, the html that was posted to the ‘result’ section of the page is cleared, the radio buttons are unchecked and and the form is scroll back to the top of the page, using the scroll function from above.
 $('.reset').click(function () {
     $('.result').empty();
     scroll('main');
