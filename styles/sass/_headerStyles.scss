@@ -1,0 +1,33 @@
+header {
+    height: 100vh;
+    background-image: url(../assets/gabriela-tamara-cycman-wDf1Qmd9UUs-unsplash.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    justify-content: center;
+    background-position: center;
+}
+
+h1 {
+    font-family: $largeFont;
+    text-transform: uppercase; 
+    font-weight: bold;
+    font-size: 130px;
+    color: $lightFontColor;
+    text-align: center;
+    letter-spacing: 1.3px;
+    width: 60%;
+    margin-bottom: 50px;
+    margin-top: 37px;
+}
+
+a {
+    letter-spacing: 1.3px;
+    background-color: $darkBackgroundColor;
+    color: $lightFontColor;
+}
+
+a:hover,
+a:focus {
+    background-color: #c9464f;
+    color: $lightFontColor;
+}

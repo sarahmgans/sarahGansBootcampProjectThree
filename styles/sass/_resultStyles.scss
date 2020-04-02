@@ -1,0 +1,35 @@
+.result > h3:nth-child(1) {
+    margin-top: 13px;
+}
+
+h3 {
+    font-size: 30px;
+    line-height: 45px;
+    text-transform: none;
+}
+
+h3 span.final {
+    font-size: 35px;
+    font-weight: bold;
+    color: #c9464f;
+}
+
+.result a {
+    font-family: $mediumFont;
+    font-weight: 400;
+    font-size: 24px;
+    text-decoration: none;
+    color: $lightFontColor;
+    background-color: #7fb069;
+    padding: 15px;
+    margin-bottom: 73px;
+    border: 1px solid #678e55;
+    transition: 0.3s;
+    line-height: 1;
+}
+
+.result a:hover,
+.result a:focus {
+    background: #678e55;
+    color: $lightFontColor;
+}

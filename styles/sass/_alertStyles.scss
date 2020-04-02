@@ -1,0 +1,31 @@
+.swal2-styled {
+    margin: 0 !important;
+}
+
+.swal2-content {
+    font-family: $mediumFont;
+    text-transform: uppercase !important;
+    font-size: 16px !important;
+    line-height: 23px !important;
+    letter-spacing: 1.3px !important;
+}
+
+.swal2-styled.swal2-confirm {
+    border: 0 !important;
+    border-radius: 0 !important;
+    background-color: #678e55 !important;
+    color: $lightFontColor !important;
+}
+
+.swal2-title {
+    font-family: $largeFont !important;
+    text-transform: uppercase !important;
+    font-size: 28px !important;
+}
+
+.swal2-popup {
+    background-color: $lightFontColor !important;
+    width: 29rem !important;
+    border-radius: 0 !important;
+    border: 1px solid $darkBackgroundColor !important;
+}

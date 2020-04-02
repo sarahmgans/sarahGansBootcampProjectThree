@@ -354,10 +354,11 @@ h3 span.final {
   color: #f0f2ef;
   background-color: #7fb069;
   padding: 15px;
-  margin-bottom: 60px;
+  margin-bottom: 73px;
   border: 1px solid #678e55;
   -webkit-transition: 0.3s;
   transition: 0.3s;
+  line-height: 1;
 }
 
 main {
@@ -397,7 +398,6 @@ main {
 }
 
 .buttons {
-  padding-bottom: 30px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -419,6 +419,7 @@ hr {
   height: 0;
   border-top: 1px solid #f0f2ef;
   width: 100%;
+  margin: 0;
 }
 
 .myForm > fieldset:nth-child(4) {
@@ -507,10 +508,14 @@ a:focus {
 
 .submit {
   margin-bottom: 0px;
+  margin-top: 65px;
+  padding-top: 0;
+  padding-bottom: 0;
 }
 
 .reset {
-  margin-bottom: 32px;
+  margin-bottom: 65px;
+  padding-bottom: 0;
 }
 
 .submit:hover,
@@ -565,7 +570,6 @@ a:focus {
   .reset {
     font-size: 21px;
     padding-bottom: 1px;
-    padding-top: 3px;
   }
   .result > h3:nth-child(1) {
     margin-top: 0px;
@@ -595,7 +599,7 @@ a:focus {
   .submit,
   .reset {
     font-size: 19px;
-    margin-top: 40px;
+    margin-top: 37px;
   }
   h3 {
     font-size: 22px;
@@ -605,7 +609,7 @@ a:focus {
   }
   .result a {
     font-size: 16px;
-    margin-bottom: 50px;
+    margin-bottom: 45px;
   }
   a {
     margin-bottom: 0;
@@ -617,7 +621,7 @@ a:focus {
     padding-top: 3px;
   }
   .reset {
-    margin-bottom: 23px;
+    margin-bottom: 15px;
     padding-top: 3px;
   }
 }

@@ -1,0 +1,121 @@
+main {
+    background-color: $lightBackgroundColor;
+}
+
+p {
+    font-family: $mediumFont;
+    font-size: 24px;
+    font-weight: 400;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1.3px;
+    padding-top: 55px;
+    margin: 0px 10px 30px 10px;
+    color: $darkFontColor;
+}
+
+h2 {
+    font-size: 25px;
+    line-height: 1.15;
+}
+
+h2,
+h3 {
+    font-family: $smallFont;
+    letter-spacing: 1px;
+    font-weight: 400;
+    margin: 30px 0px;
+    color: $darkFontColor;
+    text-align: center;
+    padding: 10px;
+}
+
+.cuteButton {
+    margin: 20px 0 20px 0;
+    padding: 0;
+}
+
+.cuteButton label {
+    letter-spacing: 1px;
+    margin: 40px;
+    background-color: $lightFontColor;
+    color: $darkFontColor;
+    border: 1px solid $darkBackgroundColor;
+}
+
+.cuteButton label,
+a {
+    font-family: $mediumFont;
+    font-size: 22px;
+    text-transform: uppercase;
+    text-decoration: none;
+    background-color: $lightFontColor;
+    color: $darkFontColor;
+    transition: 0.3s;
+    font-weight: 400;
+    padding: 15px 20px;
+}
+
+.cuteButton label:hover,
+.cuteButton label:focus {
+    background-color: $darkBackgroundColor; 
+    color: $lightFontColor;
+}
+
+input[type="radio"] {
+    opacity: 0.01;
+    position: absolute;
+    left: -1000px;
+}
+
+.cuteButton input[type="radio"]:focus+label,
+.cuteButton input[type="radio"]:checked+label {
+    background-color: $darkBackgroundColor;
+    color: $lightFontColor;
+}
+
+.myForm > fieldset:nth-child(4) {
+    padding-bottom: 55px;
+}
+
+.myForm > fieldset:nth-child(1) > h2:nth-child(1) {
+    margin-top: 0;
+}
+
+hr {
+    border: 0;
+    height: 0;
+    border-top: 1px solid $lightFontColor;
+    width: 100%;
+    margin: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
+
+
+
+
+
+
