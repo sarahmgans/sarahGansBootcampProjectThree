@@ -8,6 +8,7 @@
     <link href="https://fonts.googleapis.com/css?family=Bebas+Neue|Montserrat:400,500,600|Old+Standard+TT:400,700&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/b92fc38b7b.js" crossorigin="anonymous"></script>
 </head>
+<!-- A large wrapper to contain the page content on a large display -->
 <body class="largeWrapper">
     <div>
     <!-- The header starts here -->
@@ -18,7 +19,7 @@
     <!-- The quiz page here -->
     <main id= "startQuiz" class="textBackground">
         <section class="quiz wrapper">
-
+            <!-- A short introduction to the quiz for the user -->
             <p>Answer the questions below to find your new favorite apple</p>
             <!-- The questions for the quiz start here -->
             <div class="appleQuiz" id="quizPomme">
@@ -27,9 +28,10 @@
                         <!-- First question -->
                         <h2>How will you be using your apple?</h2>
                         <div class="cuteButton">
+                            <!-- Option one -->
                             <input type="radio" name="use" value="cooking" id="cooking" autocomplete="off">
                             <label for="cooking">Cooking</label>
-                            
+                            <!-- Option two -->
                             <input type="radio" name="use" value="snack" id="snack" autocomplete="off">
                             <label for="snack">Snacking</label>
                         </div>
@@ -38,9 +40,10 @@
                         <!-- Second question -->
                         <h2>What is your apple-texture of choice?</h2>
                         <div class="cuteButton">
+                            <!-- Option one -->
                             <input type="radio" name="texture" value="crisp" id="crisp" autocomplete="off">
                             <label for="crisp">Crisp</label>
-                            
+                            <!-- Option two -->
                             <input type="radio" name="texture" value="soft" id="soft" autocomplete="off">
                             <label for="soft">Soft</label>
                         </div>
@@ -49,9 +52,10 @@
                         <!-- Third question -->
                         <h2>What flavour profile would you like your apple to have?</h2>
                         <div class="cuteButton">
+                            <!-- Option one -->
                             <input type="radio" name="flavour" value="sweet" id="sweet" autocomplete="off">
                             <label for="sweet">Sweet</label>
-                        
+                            <!-- Option two -->
                             <input type="radio" name="flavour" value="tart" id="tart" autocomplete="off">
                             <label for="tart">Tart</label>
                         </div>
@@ -60,13 +64,15 @@
                         <!-- Fourth question -->
                         <h2>What size would you like your apple to be?</h2>
                         <div class="cuteButton">
+                            <!-- Option one -->
                             <input type="radio" name="size" value="big" id="big" autocomplete="off">
                             <label for="big">Big</label>
-                    
+                            <!-- Option two -->
                             <input type="radio" name="size" value="little" id="little" autocomplete="off">
                             <label for="little">Little</label>
                         </div>
-                    </fieldset>      
+                    </fieldset>
+                        <!-- A horizontal line contained by a wrapper to seperate the quiz questions from the submit and reset buttons -->
                         <div class="wrapper">
                             <hr>
                         </div>
@@ -81,7 +87,7 @@
                         </div>
                     </form>
                 </div>
-                <!-- The results for the quiz are displayed in this section below -->
+                <!-- The results for the quiz are displayed here -->
             <section class="result wrapper" id="result"></section>
         </section>
         </div>
