@@ -9,7 +9,7 @@ p {
     text-align: center;
     text-transform: uppercase;
     letter-spacing: 1.3px;
-    margin: 55px 10px 30px 10px;
+    margin: 55px auto 30px;
     color: $darkFontColor;
 }
 
@@ -31,19 +31,31 @@ h3 {
 
 .cuteButton {
     margin: 20px 0;
-    padding: 0;
+    padding: 0px;
+
+    input[type="radio"]:focus+label,
+    input[type="radio"]:checked+label {
+        background-color: $darkBackgroundColor;
+        color: $lightFontColor;
+        }
+
+        label {
+            letter-spacing: 1px;
+            margin: 40px;
+            background-color: $lightFontColor;
+            color: $darkFontColor;
+            border: 1px solid $darkBackgroundColor;
+
+        &:focus,
+        &:hover {
+            background-color: $darkBackgroundColor; 
+            color: $lightFontColor;
+        }   
+    }
 }
 
+a,
 .cuteButton label {
-    letter-spacing: 1px;
-    margin: 40px;
-    background-color: $lightFontColor;
-    color: $darkFontColor;
-    border: 1px solid $darkBackgroundColor;
-}
-
-.cuteButton label,
-a {
     font-family: $mediumFont;
     font-size: 22px;
     text-transform: uppercase;
@@ -55,30 +67,18 @@ a {
     padding: 15px 20px;
 }
 
-.cuteButton label:hover,
-.cuteButton label:focus {
-    background-color: $darkBackgroundColor; 
-    color: $lightFontColor;
-}
-
 input[type="radio"] {
     opacity: 0.01;
     position: absolute;
     left: -1000px;
 }
 
-.cuteButton input[type="radio"]:focus+label,
-.cuteButton input[type="radio"]:checked+label {
-    background-color: $darkBackgroundColor;
-    color: $lightFontColor;
+.myForm > fieldset:nth-child(1) > h2:nth-child(1) {
+    margin-top: 0;
 }
 
 .myForm > fieldset:nth-child(4) {
     padding-bottom: 55px;
-}
-
-.myForm > fieldset:nth-child(1) > h2:nth-child(1) {
-    margin-top: 0;
 }
 
 hr {

@@ -5,6 +5,16 @@ header {
     background-repeat: no-repeat;
     justify-content: center;
     background-position: center;
+        a {
+            letter-spacing: 1.3px;
+            background-color: $darkBackgroundColor;
+            color: $lightFontColor;
+        &:hover,
+        &:focus {
+            background-color: #c9464f;
+            color: $lightFontColor;
+        }
+    }
 }
 
 h1 {
@@ -13,21 +23,8 @@ h1 {
     font-weight: bold;
     font-size: 130px;
     color: $lightFontColor;
-    text-align: center;
     letter-spacing: 1.3px;
     width: 60%;
-    margin-bottom: 50px;
-    margin-top: 37px;
-}
-
-header a {
-    letter-spacing: 1.3px;
-    background-color: $darkBackgroundColor;
-    color: $lightFontColor;
-}
-
-a:hover,
-a:focus {
-    background-color: #c9464f;
-    color: $lightFontColor;
+    padding-bottom: 30px;
+    margin: 0 auto;
 }
