@@ -1,16 +1,18 @@
 .result > h3:nth-child(1) {
-    margin-top: 13px;
+    margin-bottom: 30px;
 }
 
 h3 {
     font-size: 30px;
     line-height: 45px;
     text-transform: none;
+    margin: 0;
+    padding: 0;
 }
 
 h3 span.final {
     font-size: 35px;
-    font-weight: bold;
+    font-weight: 700;
     color: #c9464f;
 }
 
@@ -21,8 +23,7 @@ h3 span.final {
     text-decoration: none;
     color: $lightFontColor;
     background-color: #7fb069;
-    padding: 15px;
-    margin-bottom: 73px;
+    margin-bottom: 55px;
     border: 1px solid #678e55;
     transition: 0.3s;
     line-height: 1;
