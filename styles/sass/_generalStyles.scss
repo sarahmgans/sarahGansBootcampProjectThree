@@ -38,3 +38,13 @@ section {
     align-items: center;
 }
 
+a {
+    font-weight: 400;
+    font-family: $mediumFont;
+    text-decoration: none;
+    color: $lightFontColor;
+    padding: 15px 20px;
+    transition: 0.3s;
+    text-transform: uppercase;
+    letter-spacing: 1.3px;
+}

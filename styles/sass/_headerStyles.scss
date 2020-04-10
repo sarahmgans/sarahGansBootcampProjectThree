@@ -8,7 +8,8 @@ header {
         a {
             letter-spacing: 1.3px;
             background-color: $darkBackgroundColor;
-            color: $lightFontColor;
+            border: 1px solid transparent;
+            font-size: 22px;
         &:hover,
         &:focus {
             background-color: #c9464f;

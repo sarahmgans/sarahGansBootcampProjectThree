@@ -33,11 +33,17 @@ h3 {
     margin: 20px 0;
     padding: 0px;
 
-    input[type="radio"]:focus+label,
-    input[type="radio"]:checked+label {
+    input[type="radio"] {
+    opacity: 0.01;
+    position: absolute;
+    left: -1000px;
+
+    &:focus+label,
+    &:checked+label {
         background-color: $darkBackgroundColor;
         color: $lightFontColor;
         }
+    }
 
         label {
             letter-spacing: 1px;
@@ -45,6 +51,12 @@ h3 {
             background-color: $lightFontColor;
             color: $darkFontColor;
             border: 1px solid $darkBackgroundColor;
+            font-family: $mediumFont;
+            font-size: 22px;
+            text-transform: uppercase;
+            transition: 0.3s;
+            font-weight: 400;
+            padding: 15px 20px;
 
         &:focus,
         &:hover {
@@ -54,24 +66,7 @@ h3 {
     }
 }
 
-a,
-.cuteButton label {
-    font-family: $mediumFont;
-    font-size: 22px;
-    text-transform: uppercase;
-    text-decoration: none;
-    background-color: $lightFontColor;
-    color: $darkFontColor;
-    transition: 0.3s;
-    font-weight: 400;
-    padding: 15px 20px;
-}
 
-input[type="radio"] {
-    opacity: 0.01;
-    position: absolute;
-    left: -1000px;
-}
 
 .myForm > fieldset:nth-child(1) > h2:nth-child(1) {
     margin-top: 0;
