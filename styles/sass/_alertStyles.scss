@@ -1,4 +1,4 @@
-// For sweetalert, the !important suffix was applied at the end of each of styles. This set the styles that I chose to be priority = 'important' and thus allowed me to overwite the default inline styles of the alert. 
+// For sweetalert, the '!important' suffix was applied at the end of each of styles. This set the styles that I chose to be `priority = 'important'` and thus allowed me to overwite the default inline styles of the alert. 
 .swal2-styled {
     margin: 0 !important;
 }
