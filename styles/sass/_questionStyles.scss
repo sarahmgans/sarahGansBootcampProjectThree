@@ -16,6 +16,7 @@ p {
 h2 {
     font-size: 25px;
     line-height: 1.15;
+    padding: 10px;
 }
 
 h2,
@@ -26,7 +27,6 @@ h3 {
     margin: 30px 0px;
     color: $darkFontColor;
     text-align: center;
-    padding: 10px;
 }
 
 .cuteButton {
@@ -34,29 +34,29 @@ h3 {
     padding: 0px;
 
     input[type="radio"] {
-    opacity: 0.01;
-    position: absolute;
-    left: -1000px;
+        opacity: 0.01;
+        position: absolute;
+        left: -1000px;
 
-    &:focus+label,
-    &:checked+label {
-        background-color: $darkBackgroundColor;
-        color: $lightFontColor;
+        &:focus+label,
+        &:checked+label {
+            background-color: $darkBackgroundColor;
+            color: $lightFontColor;
         }
     }
 
-        label {
-            letter-spacing: 1px;
-            margin: 40px;
-            background-color: $lightFontColor;
-            color: $darkFontColor;
-            border: 1px solid $darkBackgroundColor;
-            font-family: $mediumFont;
-            font-size: 22px;
-            text-transform: uppercase;
-            transition: 0.3s;
-            font-weight: 400;
-            padding: 15px 20px;
+    label {
+        letter-spacing: 1px;
+        margin: 40px;
+        background-color: $lightFontColor;
+        color: $darkFontColor;
+        border: 1px solid $darkBackgroundColor;
+        font-family: $mediumFont;
+        font-size: 22px;
+        text-transform: uppercase;
+        transition: 0.3s;
+        font-weight: 400;
+        padding: 15px 20px;
 
         &:focus,
         &:hover {
@@ -65,8 +65,6 @@ h3 {
         }   
     }
 }
-
-
 
 .myForm > fieldset:nth-child(1) > h2:nth-child(1) {
     margin-top: 0;

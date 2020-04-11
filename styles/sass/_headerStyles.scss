@@ -5,11 +5,10 @@ header {
     background-repeat: no-repeat;
     justify-content: center;
     background-position: center;
-        a {
-            letter-spacing: 1.3px;
-            background-color: $darkBackgroundColor;
-            border: 1px solid transparent;
-            font-size: 22px;
+    a {
+        background-color: $darkBackgroundColor;
+        border: 1px solid transparent;
+        font-size: 22px;
         &:hover,
         &:focus {
             background-color: #c9464f;
