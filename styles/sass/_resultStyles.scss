@@ -4,18 +4,21 @@
         font-size: 30px;
         line-height: 45px;
         padding: 0;
+        // The styling for the finalApple that is produced for the user. 
         span.final {
             font-size: 35px;
             font-weight: 700;
             color: #c9464f;
         }
     }
+    // The syling for the link in the result section that provides the user with more information on the apple that was chosen for them. 
     a {
         font-size: 24px;
         background-color: #7fb069;
         margin-bottom: 55px;
         border: 1px solid #678e55;
         line-height: 1;
+        // The hover and focus states for this link. 
         &:hover,
         &:focus {
             background: #678e55;

@@ -13,6 +13,7 @@ body {
     -moz-osx-font-smoothing: grayscale;
 } 
 
+// A large wrapper to contain the content of the page on a large display.
 .largeWrapper {
     max-width: 1800px;
     margin: 0 auto;
@@ -38,6 +39,7 @@ section {
     align-items: center;
 }
 
+// The header a and the .result a had a lot of similar styles. The styles below are the ones that overlap between the two. 
 a {
     font-weight: 400;
     font-family: $mediumFont;

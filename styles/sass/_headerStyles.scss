@@ -5,10 +5,12 @@ header {
     background-repeat: no-repeat;
     justify-content: center;
     background-position: center;
+    // The styling for the start link in the header. 
     a {
         background-color: $darkBackgroundColor;
         border: 1px solid transparent;
         font-size: 22px;
+        // The styling for the hover and focus states for this link. 
         &:hover,
         &:focus {
             background-color: #c9464f;

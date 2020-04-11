@@ -23,12 +23,14 @@
     -webkit-appearance: none;
     -webkit-border-radius: 0px;
     border-radius: 0px;
+    // The hover and focus states for the submit and reset buttons.
     &:hover,
     &:focus {
         border-bottom: 2px solid $darkFontColor;
     }
 }   
 
+// The is no margin-bottom on the submit button, as there is a margin-top on this button, and a margin-top and margin-bottom on the reset button. This allows for there to be an equal amount of space on top of the submit, between the submit and the reset, and below the reset. 
 .submit {
     margin-bottom: 0px;
 }

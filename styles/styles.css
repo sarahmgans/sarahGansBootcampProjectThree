@@ -364,18 +364,6 @@ h3 {
   padding: 0px;
 }
 
-.cuteButton input[type="radio"] {
-  opacity: 0.01;
-  position: absolute;
-  left: -1000px;
-}
-
-.cuteButton input[type="radio"]:focus + label,
-.cuteButton input[type="radio"]:checked + label {
-  background-color: #ca5d65;
-  color: #f0f2ef;
-}
-
 .cuteButton label {
   letter-spacing: 1px;
   margin: 40px;
@@ -391,7 +379,19 @@ h3 {
   padding: 15px 20px;
 }
 
-.cuteButton label:focus, .cuteButton label:hover {
+.cuteButton label:hover {
+  background-color: #ca5d65;
+  color: #f0f2ef;
+}
+
+.cuteButton input[type="radio"] {
+  opacity: 0.01;
+  position: absolute;
+  left: -1000px;
+}
+
+.cuteButton input[type="radio"]:focus + label,
+.cuteButton input[type="radio"]:checked + label {
   background-color: #ca5d65;
   color: #f0f2ef;
 }
@@ -493,7 +493,7 @@ hr {
 }
 
 .swal2-content {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Montserrat", sans-serif !important;
   text-transform: uppercase !important;
   font-size: 16px !important;
   line-height: 23px !important;

@@ -1,4 +1,4 @@
-// Create an object called appleProperties that holds two arrays, one of which will hold the eight apple objects with the use of ‘cooking’, and the other of which will hold the eight apple objects with the use of ‘snacking’.
+// Create an object called myApple.appleProperties that holds two arrays, one of which will hold the eight apple objects with the use of ‘cooking’, and the other of which will hold the eight apple objects with the use of ‘snacking’.
 
 const appleProperties = {
     cooking: [
