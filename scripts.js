@@ -1,7 +1,7 @@
 // Start with an empty object that will be holding all of the code for the application. This object will be called 'myApple' and will be the namespace for the application. 
 const myApple = {};
 
-// Add an 'appleProperties' object as a property on the 'myApple' object. It will be holding two arrays, one of which will be holding the eight apple objects with the use of 'cooking', and the other of which will be holding the eight apple objects with the use of 'snacking'.
+// Add an 'appleProperties' object as a property on the 'myApple' object. This 'appleProperties' object will hold two arrays, one of which will consist of eight apple objects with the use of 'cooking', and the other of which will consist of eight apple objects with the use of 'snacking'.
 myApple.appleProperties = {
     cooking: [
         {
@@ -122,7 +122,7 @@ myApple.appleProperties = {
     ]
 }
 
-// Define the scroll function that will be used to scroll from the landing page to the beginning of the form, from the submit button to the results, and from the reset button back to the beginning of the form. Add 'scroll' onto the 'myApple' object. 
+// Define the scroll function that will be used to scroll from the landing page to the beginning of the form, from the submit button to the results, and from the reset button back to the beginning of the form. Add the scroll function onto the 'myApple' object. 
 myApple.scroll = function (scrollTo) {
     $('html, body').animate({
         scrollTop: $(scrollTo).offset().top
@@ -147,7 +147,7 @@ myApple.clickEventSubmit = () => {
         // To do this, begin by declaring a variable called allAnswered that starts off as true. 
         let allAnswered = true;
 
-        // If a question does not have any checked radio buttons, the allAnswered variable is changed to false. If any of the questions have the allAnswered variable changed to false, alert the user to go back and complete all of the questions. 
+        // If a question does not have any checked radio buttons, the allAnswered variable for that question is changed to false. If any of the questions have the allAnswered variable changed to false, alert the user to go back and complete all of the questions. 
         $("input:radio").each(function () {
             let name = $(this).attr("name");
             if ($("input:radio[name=" + name + "]:checked").length == 0) {
@@ -184,7 +184,7 @@ myApple.clickEventSubmit = () => {
             }
         }
 
-        // Store the name of this final object in the finalChoice array in a variable called finalApple. Save the url property/value pair of each of the apples in a variable called appleInfo. 
+        // Store the name of this final object in the finalChoice array in a variable called finalApple. Save the url for each of the apples in a variable called appleInfo. 
         finalApple = finalChoice[0].name
         appleInfo = finalChoice[0].url
 
@@ -206,7 +206,7 @@ myApple.clickEventReset = () => {
 });
 }
 
-// Define the init function that will be holding the script. Inside the init function, the three event listener functions that were defined above will be called.
+// Define the init function that will be holding the script. Inside the init function, call the three functions that contain the three event listeners. 
 myApple.init = () => {
     myApple.clickEventStart();
     myApple.clickEventSubmit();
