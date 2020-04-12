@@ -122,22 +122,22 @@ myApple.appleProperties = {
     ]
 }
 
-// Define the scroll function that will be used to scroll from the landing page to the beginning of the form, from the submit button to the results, and from the reset button back to the beginning of the form. Add 'scroll' as a function on the 'myApple' object. 
+// Define the scroll function that will be used to scroll from the landing page to the beginning of the form, from the submit button to the results, and from the reset button back to the beginning of the form. Add 'scroll' onto the 'myApple' object. 
 myApple.scroll = function (scrollTo) {
     $('html, body').animate({
         scrollTop: $(scrollTo).offset().top
     }, 800);
 }
 
-// Attach an event listener onto the start link on the landing page, and on click, have the page scroll to the beginning of the form using the scroll function from above. Add this event listener as a function on the 'myApple' object. 
-myApple.clickEventLink = () => {
+// Attach an event listener onto the start link on the landing page, and on click, have the page scroll to the beginning of the form using the scroll function from above. Define a function containing the event listener and add it onto the 'myApple' object. 
+myApple.clickEventStart = () => {
     $('a').on('click', function (e) {
         e.preventDefault();
         myApple.scroll('main');
     })
 }
 
-// Attach an event listener onto the submit input on the form. Add this event listener as well as a function on the 'myApple' object. 
+// Attach an event listener onto the submit input on the form. Define a function containing the event listener and add it onto the 'myApple' object. 
 myApple.clickEventSubmit = () => {
     $('form').on('submit', function (e) {
         e.preventDefault();
@@ -170,13 +170,13 @@ myApple.clickEventSubmit = () => {
         const flavour = $('input[name="flavour"]:checked').val();
         const size = $('input[name="size"]:checked').val();
 
-        // Declare a variable to be an array called myApple.appleChoices. This will be filled with eight apple objects, all of which will have the same use.
+        // Declare a variable to be an array called appleChoices. This will be filled with eight apple objects, all of which will have the same use.
         const appleChoices = myApple.appleProperties[use];
 
-        // Declare a variable to be an array called myApple.finalChoice. This will be filled with the final apple object. 
+        // Declare a variable to be an array called finalChoice. This will be filled with the final apple object. 
         const finalChoice = [];
 
-        // Create a for loop that loops through the myApple.appleChoices array and matches the property/value pairs of an apple object with the users checked values of the texture, flavour and size inputs to produce one final object. This final object will be stored in the finalChoice array. 
+        // Create a for loop that loops through the appleChoices array and matches the property/value pairs of an apple object with the users checked values of the texture, flavour and size inputs to produce one final object. This final object will be stored in the finalChoice array. 
         for (let i = 0; i < appleChoices.length; i++) {
             const store = appleChoices[i]
             if (store.texture === texture && store.flavour === flavour && store.size === size) {
@@ -184,21 +184,21 @@ myApple.clickEventSubmit = () => {
             }
         }
 
-        // Store the name of this final object in the myApple.finalChoice array in a variable called myApple.finalApple. Save the url property/value pair of each of the apples in a variable called myApple.appleInfo. 
+        // Store the name of this final object in the finalChoice array in a variable called finalApple. Save the url property/value pair of each of the apples in a variable called appleInfo. 
         finalApple = finalChoice[0].name
         appleInfo = finalChoice[0].url
 
         // On submit, scroll to the result. 
         myApple.scroll('.result');
 
-        // Display the result html to a single location on the page. Use a ternary operator so that if the name of the apple is crab apple, the word apple at the end of the sentence is removed and not repeated. Use another ternary operator so that if the name of the apple is empire, the word in front of Empire is replaced with the word an. 
+        // Display the result html to a single location on the page. Use a ternary operator so that if the name of the apple is crab apple, the word 'apple' at the end of the sentence is removed and not repeated. Use another ternary operator so that if the name of the apple is empire, the word 'a' in front of Empire is replaced with the word 'an'. 
         $('.result').html(`<h3>You should try a${finalApple === 'Empire' ? 'n' : ''}
         <span class='final'>${finalApple}</span>${finalApple === 'Crab Apple' ? '' : ' apple'}!</h3> 
         <a href='${appleInfo}'>Learn more about the ${finalApple}</a>`);
     });
 }
 
-// Attach an event listener to the reset input on the form, so that on click, the html that was posted to the ‘result’ section of the page is cleared, the radio buttons are unchecked and the form is scrolled back to the top of the page, using once again the scroll function from above. Add this event listener as a function on the 'myApple' object. 
+// Attach an event listener to the reset input on the form, so that on click, the html that was posted to the ‘result’ section of the page is cleared, the radio buttons are unchecked and the form is scrolled back to the top of the page, using once again the scroll function from above. Define a function containing the event listener and add it onto the 'myApple' object. 
 myApple.clickEventReset = () => {
     $('.reset').click(function () {
     $('.result').empty();
@@ -206,11 +206,11 @@ myApple.clickEventReset = () => {
 });
 }
 
-// Define the init function that will be holding the script. Inside the init function, the three event listener functions that were defined above will be called, and within each of them, the scroll function that was also defined above will be called. 
+// Define the init function that will be holding the script. Inside the init function, the three event listener functions that were defined above will be called.
 myApple.init = () => {
-    myApple.clickEventLink(myApple.scroll);
-    myApple.clickEventSubmit(myApple.scroll);
-    myApple.clickEventReset(myApple.scroll);
+    myApple.clickEventStart();
+    myApple.clickEventSubmit();
+    myApple.clickEventReset();
 }
 
 // Define the document ready function. This function will allow for our page to fully load before it calls the init function that will run all of the script. 
