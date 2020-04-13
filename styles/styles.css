@@ -516,7 +516,6 @@ hr {
 .swal2-popup {
   background-color: #f0f2ef !important;
   width: 29rem !important;
-  border-radius: 0 !important;
 }
 
 @media (max-width: 1060px) {
