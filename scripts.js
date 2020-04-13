@@ -129,7 +129,7 @@ myApple.scroll = function (scrollTo) {
     }, 800);
 }
 
-// Attach an event listener onto the start link on the landing page, and on click, have the page scroll to the beginning of the form using the 'scroll' function from above. Define a function containing the event listener and add it onto the 'myApple' object. 
+// Attach an event listener onto the start link on the landing page, and on click, have the page scroll to the beginning of the form using the 'scroll' function from above. Define a function named 'clickEventStart' that when called executes the event listener, and add it onto the 'myApple' object. 
 myApple.clickEventStart = () => {
     $('a').on('click', function (e) {
         e.preventDefault();
@@ -137,7 +137,7 @@ myApple.clickEventStart = () => {
     })
 }
 
-// Attach an event listener onto the submit input on the form. Define a function containing the event listener and add it onto the 'myApple' object. 
+// Attach an event listener onto the submit input on the form. Define a function named 'clickEventSubmit' that when called executes the event listener, and add it onto the 'myApple' object. 
 myApple.clickEventSubmit = () => {
     $('form').on('submit', function (e) {
         e.preventDefault();
@@ -184,7 +184,7 @@ myApple.clickEventSubmit = () => {
             }
         }
 
-        // Store the name of this final object in the 'finalChoice' array in a variable called 'finalApple'. Save the url for each of the apples in a variable called 'appleInfo'. 
+        // Store the name of the final object in the 'finalChoice' array in a variable called 'finalApple'. Store the url for for the final object in the 'finalChoice' array in a variable called 'appleInfo'. 
         finalApple = finalChoice[0].name
         appleInfo = finalChoice[0].url
 
@@ -198,7 +198,7 @@ myApple.clickEventSubmit = () => {
     });
 }
 
-// Attach an event listener to the reset input on the form, so that on click, the html that was posted to the 'result' section of the page is cleared, the radio buttons are unchecked and the form is scrolled back to the top of the page, using once again the scroll function from above. Define a function containing the event listener and add it onto the 'myApple' object. 
+// Attach an event listener onto the reset input on the form, so that on click, the html that was posted to the 'result' section of the page is cleared, the radio buttons are unchecked and the form is scrolled back to the top of the page, using the scroll function frim above one last time. Define a function named 'clickEventReset' that when called executes the event listener, and add it onto the 'myApple' object. 
 myApple.clickEventReset = () => {
     $('.reset').click(function () {
     $('.result').empty();
@@ -206,7 +206,7 @@ myApple.clickEventReset = () => {
 });
 }
 
-// Define the init function that will be holding the script. Inside of the init function, call the three functions that contain the three event listeners. 
+// Define the init function that will be holding the script. Inside of the init function, call the three functions that execute the three event listeners. 
 myApple.init = () => {
     myApple.clickEventStart();
     myApple.clickEventSubmit();
