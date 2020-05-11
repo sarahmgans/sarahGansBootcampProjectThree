@@ -194,7 +194,7 @@ myApple.clickEventSubmit = () => {
         // Display the result html to a single location on the page. Use a ternary operator so that if the name of the apple is 'Crab Apple', the word 'apple' at the end of the sentence is removed as to not be repeated. Use another ternary operator so that if the name of the apple is 'Empire', the word 'a' in front of 'Empire' is replaced with the word 'an'. 
         $('.result').html(`<h3>You should try a${finalApple === 'Empire' ? 'n' : ''}
         <span class='final'>${finalApple}</span>${finalApple === 'Crab Apple' ? '' : ' apple'}!</h3> 
-        <a href='${appleInfo}'>Learn more about the ${finalApple}</a>`);
+        <a href='${appleInfo}' target="_blank">Learn more about the ${finalApple}</a>`);
     });
 }
 
